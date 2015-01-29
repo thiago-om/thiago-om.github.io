@@ -1,0 +1,10 @@
+{
+  "name": "thiago-om.com",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "bourbon": "~4.1.1",
+    "neat": "~1.7.1",
+    "sass-mediaqueries": "~1.4.0"
+  }
+}
