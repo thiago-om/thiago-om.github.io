@@ -1,0 +1,26 @@
+.home-masthead
+  height: 180px
+  position: relative
+
+  .icon-to-logo
+    float: left
+    font-size: 3rem
+  ul
+    display: inline-block
+
+  li
+    list-style-type: none
+    color: #bcbcbc
+    &:hover
+      color: black
+
+  // radios that act like links
+  input
+    display: none
+  input[type="radio"]:checked+label
+    color: black
+    font-weight: bold
+
+
+  .social-icons
+    float: right
