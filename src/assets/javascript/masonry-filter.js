@@ -47,6 +47,4 @@ jQuery(document).ready(function ($) {
             $container.masonry();
         }
     });
-
-
 });

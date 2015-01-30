@@ -78,6 +78,13 @@ gulp.task('copy', function () {
     .pipe($.size({ title: 'xml & txt' }))
 });
 
+gulp.task('css', function(){
+ return gulp.src('serve/assets/stylesheets/style.css')
+  .pipe($.minifyCss())
+  // .pipe(gulp.dest('serve/assets/stylesheets/'))
+});
+
+
 // Optimizes all the CSS, HTML and concats the JS etc
 gulp.task('html', ['styles'], function () {
   var assets = $.useref.assets({searchPath: 'serve'});
