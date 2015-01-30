@@ -362,23 +362,23 @@ td, th {
 .creative {
   background: purple; }
 
-.home-masthead {
+.masthead {
   height: 180px;
   position: relative; }
-  .home-masthead .icon-to-logo {
+  .masthead .icon-to-logo {
     float: left;
     font-size: 3rem; }
-  .home-masthead ul {
+  .masthead ul {
     display: inline-block; }
-  .home-masthead li {
+  .masthead li {
     list-style-type: none;
     color: #bcbcbc; }
-    .home-masthead li:hover {
+    .masthead li:hover {
       color: black; }
-  .home-masthead input {
+  .masthead input {
     display: none; }
-  .home-masthead input[type="radio"]:checked + label {
+  .masthead input[type="radio"]:checked + label {
     color: black;
     font-weight: bold; }
-  .home-masthead .social-icons {
+  .masthead .social-icons {
     float: right; }
