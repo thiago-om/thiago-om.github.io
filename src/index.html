@@ -3,107 +3,19 @@ layout: default
 title: Home
 ---
 
+<div class="loop-wrap">
 
-<section class="grid-container">
-  <ul class="toggle">
-    <li>
-      <input type="radio" name="item_type" class="green"/>
-      <label>Green</label>
-    </li>
-    <li>
-      <input type="radio" name="item_type" class="red"/>
-      <label>Red</label>
-    </li>
-    <li>
-      <input type="radio" name="item_type" class="all"/>
-      <label>All</label>
-    </li>
-  </ul>
-  <div class="grid"><a href="#">
-      <div class="item i1">
-        <p class="title">Title</p>
-      </div></a><a href="#">
-      <div class="item i2">
-        <p class="title">Title</p>
-      </div></a><a href="#">
-      <div class="item i3">
-        <p class="title">Title</p>
-      </div></a><a href="#">
-      <div class="item i4">
-        <p class="title">Title</p>
-      </div></a><a href="#">
-      <div class="item i5">
-        <p class="title">Title</p>
-      </div></a><a href="#">
-      <div class="item i6">
-        <p class="title">Title</p>
-      </div></a><a href="#">
-      <div class="item i7">
-        <p class="title">Title</p>
-      </div></a><a href="#">
-      <div class="item i8">
-        <p class="title">Title</p>
-      </div></a><a href="#">
-      <div class="item i9">
-        <p class="title">Title</p>
-      </div></a><a href="#">
-      <div class="item i10">
-        <p class="title">Title</p>
-      </div></a><a href="#">
-      <div class="item i11">
-        <p class="title">Title</p>
-      </div></a><a href="#">
-      <div class="item i12">
-        <p class="title">Title</p>
-      </div></a><a href="#">
-      <div class="item i13">
-        <p class="title">Title</p>
-      </div></a><a href="#">
-      <div class="item i14">
-        <p class="title">Title</p>
-      </div></a><a href="#">
-      <div class="item i15">
-        <p class="title">Title</p>
-      </div></a></div>
-</section>
-
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.excerpt }}
-
-    <a href="{{ post.url }}">Read more &raquo;</a>
-  </div>
-  {% endfor %}
-</div>
+    <ul class="toggle">
+        <li><input type="radio" name="item_type" class="thought-filter"/><label>Thought</label></li>
+        <li><input type="radio" name="item_type" class="creative-filter"/><label>Creative</label></li>
+        <li><input type="radio" name="item_type" class="work-filter"/><label>Work</label></li>
+        <li><input type="radio" name="item_type" class="all"/><label>All</label></li>
+    </ul>
 
 
-
-
-
-
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+    <div class="grid">
+        {% for post in site.posts %}
+        <a href="{{ post.url }}" class="item {{ post.category }}" style="height: {{ post.height }};"}><div ><p class="title">{{ post.title }}</p></div></a>
+        {% endfor %}
+    </div>
 </div>

@@ -1,42 +1,52 @@
-$(document).ready(function ($) {
+jQuery(document).ready(function ($) {
 
-  var $container = $('.grid').masonry({
-    columnWidth: 280,
-    itemSelector: '.item',
-    isFitWidth: true
-  });
+    var $container = $('.grid').masonry({
+        columnWidth: 280,
+        itemSelector: '.item',
+        isFitWidth: true
+    });
 
-  var arrGreen = new Array($('.i1'),$('.i3'),$('.i6'),$('.i7'));
-  var arrRed = new Array($('.i2'),$('.i4'),$('.i5'),$('.i8'), $('.i9'),$('.i10'),$('.i11'),$('.i12'), $('.i13'),$('.i14'),$('.i15'));
+    var arrThought = new Array($('.thought'));
+    var arrCreative = new Array($('.creative'));
+    var arrWork = new Array($('.work'));
 
-  $('input').click(function () {
-    $('.item').removeClass('expand');
+    $('input').click(function () {
 
-    if ($('.green').is(':checked')) {
-      $container.masonry('hide', arrRed);
-      $(arrGreen).each(function (index, element) {
-        element.show();
-      });
-      $container.masonry();
-    } else if ($('.red').is(':checked')) {
-      $container.masonry('hide', arrGreen);
-      $(arrRed).each(function (index, element) {
-        element.show();
-      });
-      $container.masonry();
-    } else if ($('.all').is(':checked')) {
-      $(arrGreen).each(function (index, element) {
-        element.show();
-      });
-      $(arrRed).each(function (index, element) {
-        element.show();
-      });
-      $container.masonry();
-    }
-  });
 
-  $('.item').click(function () {
-    $(this).toggleClass('expand');
-  });
+        if ($('.thought-filter').is(':checked')) {
+            $container.masonry('hide', arrCreative.concat(arrWork));
+            $(arrThought).each(function (index, element) {
+                element.show();
+            });
+            $container.masonry();
+
+        } else if ($('.creative-filter').is(':checked')) {
+            $container.masonry('hide', arrWork.concat(arrThought));
+            $(arrCreative).each(function (index, element) {
+                element.show();
+            });
+            $container.masonry();
+
+        } else if ($('.work-filter').is(':checked')) {
+            $container.masonry('hide', arrThought.concat(arrCreative));
+            $(arrWork).each(function (index, element) {
+                element.show();
+            });
+            $container.masonry();
+
+        } else if ($('.all').is(':checked')) {
+            $(arrThought).each(function (index, element) {
+                element.show();
+            });
+            $(arrCreative).each(function (index, element) {
+                element.show();
+            });
+            $(arrWork).each(function (index, element) {
+                element.show();
+            });
+            $container.masonry();
+        }
+    });
+
 
 });
