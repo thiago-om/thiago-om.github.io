@@ -1,11 +1,12 @@
 {
   "name": "thiago-om.com",
   "version": "0.0.1",
-  "dependencies": {},
+  "dependencies": {
+    "normalize.css": "~3.0.2"
+  },
   "devDependencies": {
     "sass-mediaqueries": "~1.4.0",
     "bourbon": "3.2.1",
-    "neat": "1.2",
-    "normalize.css": "~3.0.2"
+    "neat": "1.2"
   }
 }
