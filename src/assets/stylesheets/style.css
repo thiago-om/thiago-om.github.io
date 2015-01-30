@@ -1,215 +1,44 @@
+@charset "UTF-8";
+@import url(../_bower_components/normalize.css/normalize.css);
+/* Main Sass file */
 /*
-  The main SCSS file for everything, yep */
+  CONTENTS
+  SETTINGS
+  Global...............Globally-available variables and config.
+  TOOLS
+  Mixins...............Useful mixins.
+  GENERIC
+  Normalize.css........A level playing field.
+  Box-sizing...........Better default `box-sizing`.
+  BASE
+  Headings.............H1–H6 styles.
+  OBJECTS
+  Wrappers.............Wrapping and constraining elements.
+  COMPONENTS
+  Page-head............The main page header.
+  Page-foot............The main page footer.
+  Buttons..............Button elements.
+  TRUMPS
+  Text.................Text helpers. */
 * {
   box-sizing: border-box; }
-
-.hll {
-  background-color: #ffffcc; }
-
-.c {
-  color: #999; }
-
-.err {
-  color: #AA0000;
-  background-color: #FFAAAA; }
-
-.k {
-  color: #006699; }
-
-.o {
-  color: #555555; }
-
-.cm {
-  color: #0099FF;
-  font-style: italic; }
-
-.cp {
-  color: #009999; }
-
-.c1 {
-  color: #999; }
-
-.cs {
-  color: #999; }
-
-.gd {
-  background-color: #FFCCCC;
-  border: 1px solid #CC0000; }
-
-.ge {
-  font-style: italic; }
-
-.gr {
-  color: #FF0000; }
-
-.gh {
-  color: #003300; }
-
-.gi {
-  background-color: #CCFFCC;
-  border: 1px solid #00CC00; }
-
-.go {
-  color: #AAAAAA; }
-
-.gp {
-  color: #000099; }
-
-.gu {
-  color: #003300; }
-
-.gt {
-  color: #99CC66; }
-
-.kc {
-  color: #006699; }
-
-.kd {
-  color: #006699; }
-
-.kn {
-  color: #006699; }
-
-.kp {
-  color: #006699; }
-
-.kr {
-  color: #006699; }
-
-.kt {
-  color: #007788; }
-
-.m {
-  color: #FF6600; }
-
-.s {
-  color: #d44950; }
-
-.na {
-  color: #4f9fcf; }
-
-.nb {
-  color: #336666; }
-
-.nc {
-  color: #00AA88; }
-
-.no {
-  color: #336600; }
-
-.nd {
-  color: #9999FF; }
-
-.ni {
-  color: #999999; }
-
-.ne {
-  color: #CC0000; }
-
-.nf {
-  color: #CC00FF; }
-
-.nl {
-  color: #9999FF; }
-
-.nn {
-  color: #00CCFF; }
-
-.nt {
-  color: #2f6f9f; }
-
-.nv {
-  color: #003333; }
-
-.ow {
-  color: #000000; }
-
-.w {
-  color: #bbbbbb; }
-
-.mf {
-  color: #FF6600; }
-
-.mh {
-  color: #FF6600; }
-
-.mi {
-  color: #FF6600; }
-
-.mo {
-  color: #FF6600; }
-
-.sb {
-  color: #CC3300; }
-
-.sc {
-  color: #CC3300; }
-
-.sd {
-  color: #CC3300;
-  font-style: italic; }
-
-.s2 {
-  color: #CC3300; }
-
-.se {
-  color: #CC3300; }
-
-.sh {
-  color: #CC3300; }
-
-.si {
-  color: #AA0000; }
-
-.sx {
-  color: #CC3300; }
-
-.sr {
-  color: #33AAAA; }
-
-.s1 {
-  color: #CC3300; }
-
-.ss {
-  color: #FFCC33; }
-
-.bp {
-  color: #336666; }
-
-.vc {
-  color: #003333; }
-
-.vg {
-  color: #003333; }
-
-.vi {
-  color: #003333; }
-
-.il {
-  color: #FF6600; }
-
-.css .o, .css .o + .nt, .css .nt + .nt {
-  color: #999; }
 
 .grid-container {
   position: relative;
   width: 100%;
   overflow: hidden;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s; }
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
 
 .toggle {
   text-align: center;
-  padding: 0;
-  color: white; }
-
-.toggle li {
-  display: inline;
-  padding: 0 60px; }
-
-.toggle label {
-  font-size: 1.2em;
-  padding: 0 10px; }
+  padding: 0; }
+  .toggle li {
+    display: inline;
+    padding: 0 60px; }
+  .toggle label {
+    font-size: 1.2em;
+    padding: 0 10px; }
 
 .grid {
   margin: 0 auto; }
@@ -237,3 +66,24 @@
 
 .creative {
   background: purple; }
+
+.home-masthead {
+  height: 180px;
+  position: relative; }
+  .home-masthead .icon-to-logo {
+    float: left;
+    font-size: 3rem; }
+  .home-masthead ul {
+    display: inline-block; }
+  .home-masthead li {
+    list-style-type: none;
+    color: #bcbcbc; }
+    .home-masthead li:hover {
+      color: black; }
+  .home-masthead input {
+    display: none; }
+  .home-masthead input[type="radio"]:checked + label {
+    color: black;
+    font-weight: bold; }
+  .home-masthead .social-icons {
+    float: right; }

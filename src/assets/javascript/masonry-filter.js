@@ -28,7 +28,7 @@ jQuery(document).ready(function ($) {
             $container.masonry();
 
         } else if ($('.work-filter').is(':checked')) {
-            $container.masonry('hide', arrThought.concat(arrCreative));
+            $container.masonry('hide', arrCreative.concat(arrThought));
             $(arrWork).each(function (index, element) {
                 element.show();
             });
