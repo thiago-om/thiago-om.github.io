@@ -4,15 +4,6 @@ title: Home
 ---
 
 <div class="loop-wrap">
-
-    <ul class="toggle">
-        <li><input type="radio" name="item_type" class="thought-filter"/><label>Thought</label></li>
-        <li><input type="radio" name="item_type" class="creative-filter"/><label>Creative</label></li>
-        <li><input type="radio" name="item_type" class="work-filter"/><label>Work</label></li>
-        <li><input type="radio" name="item_type" class="all"/><label>All</label></li>
-    </ul>
-
-
     <div class="grid">
         {% for post in site.posts %}
         <a href="{{ post.url }}" class="item {{ post.category }}" style="height: {{ post.height }};"}><div ><p class="title">{{ post.title }}</p></div></a>
