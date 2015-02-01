@@ -8,8 +8,8 @@ title:  Home
 
     {% for post in site.posts %}
 
-    a(class="masonry__brick {{ post.category }}" href="{{ post.url }}" style="height: {{ post.height }};")
+    a(class="masonry__brick category--{{ post.category }}" href="{{ post.url }}" style="height: {{ post.height }};")
 
-      p.title {{ post.title }}
+      p.masonry__brick--title {{ post.title }}
 
     {% endfor %}
