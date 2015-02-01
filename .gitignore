@@ -58,6 +58,8 @@ test/
 *.sublime-project
 *.sublime-workspace
 *.sublime-projectcompletions
+*.sublime-gulp.cache
+*.sublime-gulp.log
 
 app/_bower_components
 
@@ -68,3 +70,6 @@ site
 # hide the AWS and Rsync credentials file
 aws-credentials.json
 rsync-credentials.json
+
+# Working with Jade
+src/**/*.html
