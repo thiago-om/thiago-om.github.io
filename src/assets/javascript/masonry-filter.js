@@ -7,9 +7,9 @@ $(document).ready(function ($) {
     // isAnimated: false
   });
 
-  var arrThought = new Array($('.thought'));
-  var arrCreative = new Array($('.creative'));
-  var arrWork = new Array($('.work'));
+  var arrThought = new Array($('.category--thought'));
+  var arrCreative = new Array($('.category--creative'));
+  var arrWork = new Array($('.category--work'));
 
   $('input').click(function () {
 
