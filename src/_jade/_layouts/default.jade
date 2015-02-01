@@ -1,0 +1,15 @@
+doctype html
+html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-uk")
+
+  {% include head.html %}
+
+  body
+    .wrap
+      {% include masthead.html %}
+
+      .container.content
+        {{ content }}
+
+    label.sidebar-toggle(for="sidebar-checkbox")
+
+  {% include footer.html %}
