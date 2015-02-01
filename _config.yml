@@ -8,6 +8,7 @@ url: localhost:4000
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
 destination: serve
+plugins: src/_plugins
 
 # Same as the title etc for your site but can instead be
 # called by using 'site.author.name' and so on
@@ -18,14 +19,14 @@ author:
   twitter: tiggyom
 
 # general setting for Jekyll
-googleAnalytics: UA-XXXXX-X
+# googleAnalytics: UA-XXXXX-X
 
 # _config.build.yml overwrites these options when you run `gulp build`
 # Enables future posts (posts with dates in the future) and drafts
 future: true
 show_drafts: true
 # Disables the more accurate related posts for faster generating of the site
-lsi: false
+# lsi: false
 # Only make the last 10 posts so generating isn't slow
 limit_posts: 10
 
@@ -34,7 +35,7 @@ relative_permalinks: true
 permalink: pretty
 paginate: 10
 paginate_path: 'page:num'
-excerpt_separator: '<!--more-->'
+excerpt_separator: 'red more...'
 
 # Markdown library
 markdown: redcarpet
@@ -42,4 +43,4 @@ markdown: redcarpet
 redcarpet:
   extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
               'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
-highlighter: true
+highlighter: false
