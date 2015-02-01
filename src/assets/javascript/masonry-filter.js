@@ -1,9 +1,10 @@
 $(document).ready(function ($) {
 
-  var $container = $('.grid').masonry({
+  var $container = $('.masonry').masonry({
     columnWidth: 280,
-    itemSelector: '.item',
-    isFitWidth: true
+    itemSelector: '.masonry__brick',
+    isFitWidth: true,
+    // isAnimated: false
   });
 
   var arrThought = new Array($('.thought'));

@@ -1,26 +1,31 @@
-.grid-container
+.container
   position: relative
   width: 100%
   overflow: hidden
-  // +transition(all 1s ease-in-out)
 
+/**** Transitions ****/
+.masonry, .masonry .creative
+  transition-duration: 0.7s
+.masonry
+  transition-property: height, width
+.masonry .creative
+  transition-property: left, right, top
 
+// Fake radio filters
 .toggle
   text-align: center
   padding: 0
-
   li
     display: inline
     padding: 0 60px
-
   label
     font-size: 1.2em
     padding: 0 10px
 
-.grid
+.masonry
   margin: 0 auto
 
-.item
+.masonry__brick
   color: white
   display: table
   font-size: 1.4em
@@ -28,8 +33,9 @@
   margin: 5px
   width: 270px
 
-.item:hover .title
+.masonry__brick:hover .title
   opacity: 1
+
 
 .title
   display: table-cell
