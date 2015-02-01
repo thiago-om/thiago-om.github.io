@@ -73,3 +73,6 @@ rsync-credentials.json
 
 # Working with Jade
 src/**/*.html
+
+# Served css files
+src/assets/stylesheets
