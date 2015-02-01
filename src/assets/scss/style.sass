@@ -1,10 +1,17 @@
 //Main Sass file
 
+// Base
 @import "../_bower_components/normalize.css/normalize"
 @import "../_bower_components/sass-mediaqueries/media-queries"
-@import "../_bower_components/bourbon/dist/bourbon"
-@import "tools/grid-settings"
+@import "base/colours"
+@import "base/fonts"
+@import "base/mixins"
 
+// Utilities
+@import "../_bower_components/bourbon/dist/bourbon"
+@import "_utilities/index"
 @import "../_bower_components/neat/app/assets/stylesheets/neat"
 
-@import "modules/modules-dir"
+// Modules
+@import "_modules/masonry"
+@import "_modules/mast-head"
