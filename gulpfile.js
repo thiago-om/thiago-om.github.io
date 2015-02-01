@@ -87,7 +87,8 @@ gulp.task('layouts', function() {
     .pipe($.jade({
       pretty: true
     }))
-    .pipe(gulp.dest('src/'));
+    .pipe(gulp.dest('src/'))
+    .pipe($.size());
 });
 
 // Optimizes all the CSS, HTML and concats the JS etc
@@ -164,7 +165,7 @@ gulp.task('serve:dev', ['layouts', 'styles', 'jekyll:dev'], function () {
 gulp.task('watch', function () {
   gulp.watch(['src/**/*.{md,html,xml,txt,js}'], ['jekyll-rebuild']);
   gulp.watch(['serve/assets/stylesheets/*.css'], reload);
-  gulp.watch(['src/_layouts/jade/*.jade'], ['layouts']);
+  gulp.watch(['src/_jade/**/*.jade'], ['layouts']);
   gulp.watch(['src/assets/scss/**/*.{scss,sass}'], ['styles']);
 });
 
