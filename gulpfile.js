@@ -66,6 +66,14 @@ gulp.task('images', function () {
     .pipe($.size({title: 'images'}));
 });
 
+// Copy images to 'serve' directory during development
+gulp.task('images:dev', function () {
+  return gulp.src('src/assets/images/**')
+    .pipe($.changed('site/assets/images'))
+    .pipe(gulp.dest('site/assets/images'))
+    .pipe($.size({title: 'images dev'}));
+});
+
 // Copy over fonts to the 'site' directory
 gulp.task('fonts', function () {
   return gulp.src('src/assets/fonts/**')
@@ -167,6 +175,7 @@ gulp.task('watch', function () {
   gulp.watch(['serve/assets/stylesheets/*.css'], reload);
   gulp.watch(['src/_jade/**/*.jade'], ['layouts']);
   gulp.watch(['src/assets/scss/**/*.{scss,sass}'], ['styles']);
+  gulp.watch(['src/assets/images/**'], ['images:dev'], reload);
 });
 
 // Serve the site after optimizations to see that everything looks fine
