@@ -4,7 +4,7 @@ $(document).ready(function ($) {
     columnWidth: 280,
     itemSelector: '.masonry__brick',
     isFitWidth: true,
-    // isAnimated: false
+    isAnimated: false
   });
 
   var arrThought = new Array($('.category--thought'));
