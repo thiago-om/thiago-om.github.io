@@ -221,3 +221,7 @@ gulp.task('publish', function(callback) {
               ['html', 'copy', 'images', 'fonts' ],
               callback);
 });
+
+gulp.task("publish:old", ["build"], function () {
+  gulp.start("html", "copy", "images", "fonts");
+});

@@ -1,10 +1,10 @@
 $(document).ready(function ($) {
 
   var $container = $('.masonry').masonry({
-    columnWidth: 280,
     itemSelector: '.masonry__brick',
+    columnWidth: 260,
     isFitWidth: true,
-    isAnimated: false
+    isAnimated: !Modernizr.csstransitions
   });
 
   var arrThought = new Array($('.category--thought'));
