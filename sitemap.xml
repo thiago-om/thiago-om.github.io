@@ -2,13 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>thiago-om.github.io/</loc>
-    <lastmod>2015-01-30T18:26:06+00:00</lastmod>
+    <lastmod>2015-02-03T00:03:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
     <url>
-      <loc>thiago-om.github.io/work/2014/03/03/work-01/</loc>
+      <loc>thiago-om.github.io/creative/2015/02/01/this-is-the-year-of-creativity%202/</loc>
+      
+        <lastmod>2015-02-01T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>thiago-om.github.io/creative/2015/02/01/this-is-the-year-of-creativity/</loc>
+      
+        <lastmod>2015-02-01T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>thiago-om.github.io/work/2014/03/03/work-02/</loc>
+      
+        <lastmod>2014-03-03T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>thiago-om.github.io/work/2014/03/03/work-01%202/</loc>
       
         <lastmod>2014-03-03T00:00:00+00:00</lastmod>
       
@@ -50,7 +89,7 @@
   <url>
     <loc>thiago-om.github.io/404/</loc>
     
-      <lastmod>2015-01-30T18:26:06+00:00</lastmod>
+      <lastmod>2015-02-03T00:03:45+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -63,7 +102,7 @@
   <url>
     <loc>thiago-om.github.io/about/</loc>
     
-      <lastmod>2015-01-30T18:26:06+00:00</lastmod>
+      <lastmod>2015-02-03T00:03:45+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -76,7 +115,7 @@
   <url>
     <loc>thiago-om.github.io/atom.xml</loc>
     
-      <lastmod>2015-01-30T18:26:06+00:00</lastmod>
+      <lastmod>2015-02-03T00:03:45+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -89,7 +128,7 @@
   <url>
     <loc>thiago-om.github.io/</loc>
     
-      <lastmod>2015-01-30T18:26:06+00:00</lastmod>
+      <lastmod>2015-02-03T00:03:45+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -102,7 +141,7 @@
   <url>
     <loc>thiago-om.github.io/sitemap.xml</loc>
     
-      <lastmod>2015-01-30T18:26:06+00:00</lastmod>
+      <lastmod>2015-02-03T00:03:45+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
