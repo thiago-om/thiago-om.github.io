@@ -11,6 +11,8 @@ var del = require('del');
 var browserSync = require('browser-sync');
 // merge is used to merge the output from two different streams into the same stream
 var merge = require('merge-stream');
+// Control the sequence of task running for Modernizr to not break task
+var runSequence = require('run-sequence');
 // Need a command for reloading webpages using BrowserSync
 var reload = browserSync.reload;
 // And define a variable that BrowserSync uses in it's function
@@ -99,6 +101,13 @@ gulp.task('layouts', function() {
     .pipe($.size());
 });
 
+// Browser Compatability with Modernizr 3
+gulp.task('modernize', function() {
+  return gulp.src('src/assets/javascript/*.js')
+        .pipe($.modernizr())
+        .pipe(gulp.dest('src/assets/javascript'))
+});
+
 // Optimizes all the CSS, HTML and concats the JS etc
 gulp.task('html', ['styles'], function () {
   var assets = $.useref.assets({searchPath: 'serve'});
@@ -173,7 +182,7 @@ gulp.task('serve:dev', ['layouts', 'styles', 'jekyll:dev'], function () {
 gulp.task('watch', function () {
   gulp.watch(['src/**/*.{md,html,xml,txt,js}'], ['jekyll-rebuild']);
   gulp.watch(['serve/assets/stylesheets/*.css'], reload);
-  gulp.watch(['src/_jade/**/*.jade'], ['layouts']);
+  gulp.watch(['src/**/*.jade'], ['layouts']);
   gulp.watch(['src/assets/scss/**/*.{scss,sass}'], ['styles']);
   gulp.watch(['src/assets/images/**'], ['images:dev'], reload);
 });
@@ -198,10 +207,17 @@ gulp.task('check', ['jslint', 'doctor'], function () {
 });
 
 // Builds the site but doesn't serve it to you
-gulp.task('build', ['jekyll:prod', 'styles'], function () {});
+gulp.task('build', function(callback) {
+  runSequence(['modernize'],
+              ['jekyll:prod', 'styles'],
+              callback);
+});
 
-// Builds your site with the 'build' command and then runs all the optimizations on
+// Runs modernizr script asynchronously then
+// builds your site with the 'build' command and then runs all the optimizations on
 // it and outputs it to './site'
-gulp.task('publish', ['build'], function () {
-  gulp.start('html', 'copy', 'images', 'fonts');
+gulp.task('publish', function(callback) {
+  runSequence(['build'],
+              ['html', 'copy', 'images', 'fonts' ],
+              callback);
 });
