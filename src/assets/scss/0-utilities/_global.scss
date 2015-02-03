@@ -31,8 +31,8 @@ $old-ie                       : false !default;
 // =============
 
 // Descriptive colors:
-$dltc-pink                    : #f2c0af;
-$dltc-brown                   : #491225;
+$grey-dark                    : #666;
+$grey-light                   : #333;
 $hopbush                      : #c69;
 $bouquet                      : #b37399;
 $venus                        : #998099;
@@ -48,9 +48,9 @@ $midnight-blue                : #036;
 $black                        : #000;
 
 // Main color palette
-$color-primary                : $dltc-brown;
-$color-secondary              : $dltc-pink;
-$color-accent                 : lighten($dltc-brown, 5%);
+$color-primary                : $grey-light;
+$color-secondary              : $grey-dark;
+$color-accent                 : lighten($grey-light, 5%);
 $color-shadow                 : rgba($black, .125);
 $color-note                   : #666;
 
@@ -121,7 +121,7 @@ $google-fonts-url          : 'http://fonts.googleapis.com/css?family=Roboto+Slab
  * @type array
  */
 
-$fonts                     : 'samarn-webfont';
+$fonts                     : 'icomoon';
 
 /**
  * define font stack used for sans-serifs

@@ -1,15 +1,27 @@
 
 .masthead__wrap
-  height: 200px
+  height: 260px
+  +max-screen(1300px)
+    height: 150px
   transform-style: preserve-3d
 
 .masthead
   +span-columns(18)
   height: 200px
+  +max-screen(1300px)
+    height: 150px
 
   .icon-to-logo
     +span-columns(4)
     +vertical-align
+    opacity: 0.9
+    +transition(all .5 linear)
+    &:hover
+      opacity: 1
+    img
+      +max-screen(1300px)
+        +size(100px)
+
 
   nav
     +span-columns(10)
@@ -27,24 +39,9 @@
         +transition(all .35s linear)
         &:hover
           color: black
-          background-color: rgba(155,155,155,0.7)
 
         input
           display: none
         input[type="radio"]:checked+label
           color: black
           font-weight: bold
-
-
-
-  .social-icons
-    +span-columns(4)
-    +vertical-align
-    ul
-      float: right
-      list-style-type: none
-      li
-        display: inline-block
-        +size(15px)
-        border-radius: 50%
-        background-color: grey
