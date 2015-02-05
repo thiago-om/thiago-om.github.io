@@ -3,6 +3,7 @@
   layout: post
   ---
 
+{% include head.html %}
 .post
   h1.post-title {{ page.title }}
   span.post-date {{ page.date | date_to_string }}
@@ -19,3 +20,5 @@
           small {{ post.date | date_to_string }}
 
     {% endfor %}
+
+  {% include footer.html %}
