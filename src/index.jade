@@ -8,7 +8,7 @@ title:  Home
 
     {% for post in site.posts %}
 
-    a(class="masonry__brick category--{{ post.category }}" href="{{ post.url }}" style="height: {{ post.height }};")
+    a(class="masonry__brick category--{{ post.category }}" href="{{ post.url }}")
       h2.masonry__brick--title {{ post.title }}
       em.masonry__brick--date {{ post.date | date: "%-d %B %Y" }}
       img.masonry__brick--cover
