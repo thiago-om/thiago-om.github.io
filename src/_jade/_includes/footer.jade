@@ -1,12 +1,15 @@
-// JS
-script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
-script(src='//cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/masonry.pkgd.min.js')
-// build:js /assets/javascript/all.min.js
-script(src='/assets/javascript/modernizr.js')
-script(src='/assets/javascript/masonry-filter.js')
-script(src='/assets/javascript/javascript.js')
-// endbuild
+footer.site-footer
+  .site-footer__content
+     a(href='/')
+      img(src="/assets/images/logo/logo.png")
+      span this is an awesome paragraph
+    ul.pagination__btns
+      {% if page.next %}
+      li
+        a(href='{{ page.next.url }}' rel='next').icon-btn-next
+      {% endif %}
+      {% if page.previous %}
+      li
+        a(href='{{ page.previous.url }}' rel='previous').icon-btn-prev
+      {% endif %}
 
-footer
-  .copyright
-    &copy; Thiago Om, 2015
