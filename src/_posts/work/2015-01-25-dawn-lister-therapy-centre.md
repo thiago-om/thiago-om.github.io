@@ -1,9 +1,9 @@
 ---
 layout: post
 date: 2014-03-03
-title: Work 01
+title: work 02
 category: work
-height: 260px
+tags: []
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build
