@@ -53,6 +53,21 @@ gulp.task('styles', function () {
     .pipe(reload({stream: true}));
 });
 
+gulp.task('styles:ruby', function () {
+  return $.rubySass(
+      // This replaces `update` or `file:file` as the source.
+      // The appropriate Sass command is fired
+      // based on whether a file or directory is passed.
+      'src/assets/scss', {
+        sourcemap: true,
+        style: 'expanded',
+        precision: 10
+      })
+      //.pipe($.autoprefixer(['last 2 versions', { cascade: true }]))
+      .pipe(gulp.dest('serve/assets/stylesheets/'))
+      .pipe($.size({title: 'styles'}))
+      .pipe(reload({stream: true}));;
+});
 
 // Optimizes the images that exists
 gulp.task('images', function () {
