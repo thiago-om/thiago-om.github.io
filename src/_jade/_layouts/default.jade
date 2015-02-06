@@ -9,10 +9,21 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en_uk")
   {% include head.html %}
 
   body
-    .body-container
-      {% include masthead.html %}
+    //- input#pulldown(type='checkbox', name='', value='')
+    input#pulldowntoggler(type="checkbox")
+    .page-wrap
+      //- label.toggle(for='pulldown') sayhello
 
-      .container.content
+      .page-content
+        {% include masthead.html %}
         {{ content }}
+    .top-nav
+      ul
+        li Home
+        li Projects
+        li Clients
+        li Blog
+        li Contact
 
-      {% include scripts.html %}
+
+    {% include scripts.html %}
