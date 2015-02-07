@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>thiago-om</title>
- <link href="thiago-om.github.io/atom.xml" rel="self"/>
- <link href="thiago-om.github.io/"/>
- <updated>2015-02-05T04:06:11+00:00</updated>
- <id>thiago-om.github.io</id>
+ <title>thiagodebastos</title>
+ <link href="thiagodebastos.github.io/atom.xml" rel="self"/>
+ <link href="thiagodebastos.github.io/"/>
+ <updated>2015-02-07T14:48:16+00:00</updated>
+ <id>thiagodebastos.github.io</id>
  <author>
-   <name>Thiago Om</name>
+   <name>Thiago De Bastos</name>
    <email>thiago@xingur.com</email>
  </author>
 
  
  <entry>
    <title>Thoughts 01</title>
-   <link href="thiago-om.github.io/thought/2014/03/03/thoughts-04/"/>
+   <link href="thiagodebastos.github.io/thought/2014/03/03/thoughts-04/"/>
    <updated>2014-03-03T00:00:00+00:00</updated>
-   <id>thiago-om.github.io/thought/2014/03/03/thoughts-04</id>
+   <id>thiagodebastos.github.io/thought/2014/03/03/thoughts-04</id>
    <content type="html">&lt;p&gt;Vivamus Hendrerit Arcu Sed&lt;/p&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est.&lt;/p&gt;
@@ -27,9 +27,9 @@
  
  <entry>
    <title>Thoughts 01</title>
-   <link href="thiago-om.github.io/thought/2014/03/03/thoughts-01/"/>
+   <link href="thiagodebastos.github.io/thought/2014/03/03/thoughts-01/"/>
    <updated>2014-03-03T00:00:00+00:00</updated>
-   <id>thiago-om.github.io/thought/2014/03/03/thoughts-01</id>
+   <id>thiagodebastos.github.io/thought/2014/03/03/thoughts-01</id>
    <content type="html">&lt;p&gt;Vivamus Hendrerit Arcu Sed&lt;/p&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est.&lt;/p&gt;
@@ -40,27 +40,27 @@
  
  <entry>
    <title>creative 01</title>
-   <link href="thiago-om.github.io/creative/2014/03/03/this-is-the-year-of-creativity%202/"/>
+   <link href="thiagodebastos.github.io/creative/2014/03/03/this-is-the-year-of-creativity%202/"/>
    <updated>2014-03-03T00:00:00+00:00</updated>
-   <id>thiago-om.github.io/creative/2014/03/03/this-is-the-year-of-creativity 2</id>
+   <id>thiagodebastos.github.io/creative/2014/03/03/this-is-the-year-of-creativity 2</id>
    <content type="html">&lt;p&gt;stuff 2&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>Creative 01</title>
-   <link href="thiago-om.github.io/creative/2014/03/03/this-is-the-year-of-creativity/"/>
+   <link href="thiagodebastos.github.io/creative/2014/03/03/this-is-the-year-of-creativity/"/>
    <updated>2014-03-03T00:00:00+00:00</updated>
-   <id>thiago-om.github.io/creative/2014/03/03/this-is-the-year-of-creativity</id>
+   <id>thiagodebastos.github.io/creative/2014/03/03/this-is-the-year-of-creativity</id>
    <content type="html">&lt;p&gt;stuff&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>work 02</title>
-   <link href="thiago-om.github.io/work/2014/03/03/dawn-lister-therapy-centre/"/>
+   <link href="thiagodebastos.github.io/work/2014/03/03/dawn-lister-therapy-centre/"/>
    <updated>2014-03-03T00:00:00+00:00</updated>
-   <id>thiago-om.github.io/work/2014/03/03/dawn-lister-therapy-centre</id>
+   <id>thiagodebastos.github.io/work/2014/03/03/dawn-lister-therapy-centre</id>
    <content type="html">&lt;p&gt;You&amp;rsquo;ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build
 (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes! To add new posts, simply add
 a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention:
@@ -106,9 +106,9 @@ Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/mo
  
  <entry>
    <title>Solid Nutrition London</title>
-   <link href="thiago-om.github.io/work/2014/01/15/solid-nutrition-london/"/>
+   <link href="thiagodebastos.github.io/work/2014/01/15/solid-nutrition-london/"/>
    <updated>2014-01-15T00:00:00+00:00</updated>
-   <id>thiago-om.github.io/work/2014/01/15/solid-nutrition-london</id>
+   <id>thiagodebastos.github.io/work/2014/01/15/solid-nutrition-london</id>
    <content type="html">&lt;h1&gt;Solid Nutrition London&lt;/h1&gt;
 </content>
  </entry>
