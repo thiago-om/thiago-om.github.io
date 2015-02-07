@@ -37,7 +37,8 @@ gulp.task('jekyll-rebuild', ['jekyll:dev'], function () {
 gulp.task('jekyll:prod', $.shell.task('jekyll build --config _config.yml,_config.build.yml'));
 
 // Compiles the SASS files and moves them into the 'assets/stylesheets' directory
-gulp.task('styles', function () {
+// node-sass not compatible with node 0.12
+gulp.task('styles:libsass', function () {
   // Looks at the style.scss or style.sass file for what to include and creates a style.css file
   return gulp.src('src/assets/scss/*.{scss,sass}')
     .pipe($.if('*.sass', $.sass({indentedSyntax: true, errLogToConsole: true})))
@@ -53,7 +54,7 @@ gulp.task('styles', function () {
     .pipe(reload({stream: true}));
 });
 
-gulp.task('styles:ruby', function () {
+gulp.task('styles', function () {
   return $.rubySass(
       // This replaces `update` or `file:file` as the source.
       // The appropriate Sass command is fired
@@ -63,7 +64,7 @@ gulp.task('styles:ruby', function () {
         style: 'expanded',
         precision: 10
       })
-      //.pipe($.autoprefixer(['last 2 versions', { cascade: true }]))
+      .pipe($.autoprefixer(['last 2 versions', { cascade: true }]))
       .pipe(gulp.dest('serve/assets/stylesheets/'))
       .pipe($.size({title: 'styles'}))
       .pipe(reload({stream: true}));;
