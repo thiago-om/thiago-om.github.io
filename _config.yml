@@ -1,6 +1,6 @@
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
-title: thiago-om
+title: thiagodebastos
 description: 'This is where Thiago Om keeps you connected to things he creates, thinks and feels. An Art directed blog.'
 tagline: An Art Directed Blog
 url: localhost:4000
@@ -12,10 +12,10 @@ destination: serve
 # Same as the title etc for your site but can instead be
 # called by using 'site.author.name' and so on
 author:
-  name: Thiago Om
+  name: Thiago De Bastos
   email: thiago@xingur.com
   bio: Designer, thinker, creator.
-  twitter: tiggyom
+  twitter: thiagodebastos
 
 # general setting for Jekyll
 # googleAnalytics: UA-XXXXX-X
