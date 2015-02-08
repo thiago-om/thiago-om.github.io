@@ -1,0 +1,49 @@
+.coolform
+  input
+    background: none
+    border: solid 4px aqua
+    color: aqua
+    padding: 15px 40px
+    font-size: 18px
+    display: inline-block
+
+    &:focus,
+    &:active
+      outline: none
+
+    &[type="text"],
+    &[type="email"]
+      border: none
+      border-bottom: solid 4px aqua
+
+    &[type="submit"]
+      &:active
+        color: white
+        background: aqua
+
+
+  .input-group
+    display: inline-block
+    margin-right: 20px
+    position: relative
+
+    input
+      padding: 15px 0px
+
+    label
+      +position(absolute, 50% null null 0px)
+      +transform(translateY(-50%))
+      font:
+        family: 'Lato'
+        style: italic
+        size: 18px
+        weight: 300
+      color: #999
+      pointer-events: none
+      +transition
+
+    input:focus + label,
+    input.has-value + label
+      top: -10px
+      font-size: 12px
+      color: #aaa
