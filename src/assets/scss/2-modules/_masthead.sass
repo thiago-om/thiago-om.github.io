@@ -1,19 +1,15 @@
 .page-content
-  +transition()
   position: relative
   z-index: 0
+  +transition()
 
 .masthead__wrap
   height: 65px
-  +max-screen(1300px)
-    height: 75px
-  transform-style: preserve-3d
+  top: 65px
 
 .masthead
   +span-columns(18)
   height: 65px
-  +max-screen(1300px)
-    height: 120px
 
   .icon-thiago-logo
     +span-columns(4)
@@ -34,15 +30,16 @@
 
     ul.toggle
       text-align: center
-      li
-      -webkit-font-smoothing: antialiased
+      font:
+        family: 'Lato', sans-serif
+        weight: 400
       li, a
         padding: 0 1em
         display: inline
         color: #929292
         list-style-type: none
         text-decoration: none
-        +transition(all .35s linear)
+        +transition(all .25s linear)
         &:hover
           color: black
 
@@ -52,50 +49,43 @@
           color: black
           font-weight: bold
 
-
-
-.top-nav
-  // slide-out sidebar off-canvas
-  +position(fixed, -190px null 0px 0px)
-  height: 120px
+.slide-down-content
+  // slide-out topbar off-canvas
+  +position(fixed, -400px null null 0px)
+  color: black
+  z-index: 1
+  height: 400px
   width: 100%
   padding: 30px
-  background: #333
-  z-index: 0
   text-align: center
   +transition()
 
-  li
+  p.blurb
+    font:
+      family: 'Lato', sans-serif
+      weight: 300
+      size: 2rem
     display: inline-block
-    color: rgba(255,255,255,0.8)
-    font-family: "Ubuntu", sans-serif
-    font-size: 16px
-    padding: 20px
-    margin-bottom: 16px
+    color: black
     list-style-type: none
-    -webkit-font-smoothing: antialiased
-    cursor: pointer
-    &:hover
-      color: rgba(255,255,255,1)
+    span
+      font-weight: 900
+  .coolform
+    padding-top: 50px
 
 
 #pulldowntoggler
-  // display: none
-    // when sidebartoggler checked, get sibling (page-wrap)
+  display: none
   &:checked + .page-wrap
-    // and apply margin
-    .top-nav
-      +position(fixed, 0px null 0px 0px)
-      z-index: 1
-    // move toggler down
+    .slide-down-content
+      top: 0px
+    .masthead__wrapper
+      top: 400px
     .masthead
-      // top: 200px
-      padding: 20px 0
-      border-top: 4px solid lightgrey
-    // move page content down
+      border-top: 4px solid aqua
     .page-content
-      padding-top: 240px
-      z-index: 0
+      padding-top: 400px
+
 
 
 

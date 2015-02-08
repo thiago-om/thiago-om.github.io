@@ -12,18 +12,22 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en_uk")
     //- input#pulldown(type='checkbox', name='', value='')
     input#pulldowntoggler(type="checkbox")
     .page-wrap
-      //- label.toggle(for='pulldown') sayhello
-
       .page-content
         {% include masthead.html %}
         {{ content }}
-    .top-nav
-      ul
-        li Home
-        li Projects
-        li Clients
-        li Blog
-        li Contact
+      .slide-down-content
+        p.blurb
+          |  Each week I reach out to fellow designers, creators and thinkers.
+          |  Be part of a global community of like-minded individuals.
+          span  sign up.
 
+        form.coolform
+          .input-group
+            input(type='text')
+            label Your Full Name
+          .input-group
+            input(type='email')
+            label Your Email Address
+          input(type='submit')
 
     {% include scripts.html %}
