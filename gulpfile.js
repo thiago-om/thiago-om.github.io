@@ -65,7 +65,7 @@ gulp.task('styles', function () {
         precision: 10
       })
       .pipe($.autoprefixer(['last 2 versions', { cascade: true }]))
-      .pipe(gulp.dest('serve/assets/stylesheets/'))
+      .pipe(gulp.dest('src/assets/stylesheets/'))
       .pipe($.size({title: 'styles'}))
       .pipe(reload({stream: true}));;
 });
@@ -149,7 +149,7 @@ gulp.task('html', ['styles'], function () {
       collapseWhitespace: true,
       collapseBooleanAttributes: true,
       removeAttributeQuotes: true,
-      removeRedundantAttributes: true
+      removeRedundantAttributes: false
     })))
     // Send the output to the correct folder
     .pipe(gulp.dest('site'))
@@ -225,7 +225,7 @@ gulp.task('check', ['jslint', 'doctor'], function () {
 // Builds the site but doesn't serve it to you
 gulp.task('build', function(callback) {
   runSequence(['modernize'],
-              ['jekyll:prod', 'styles'],
+              'jekyll:prod',
               callback);
 });
 
@@ -236,8 +236,4 @@ gulp.task('publish', function(callback) {
   runSequence(['build'],
               ['html', 'copy', 'images', 'fonts' ],
               callback);
-});
-
-gulp.task("publish:old", ["build"], function () {
-  gulp.start("html", "copy", "images", "fonts");
 });
