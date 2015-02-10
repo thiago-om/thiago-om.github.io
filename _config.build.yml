@@ -8,7 +8,7 @@ url: thiagodebastos.github.io
 future: false
 show_drafts: false
 # Gives you more accurate related posts
-lsi: false
+lsi: true
 # Removes the upper limit for posts generated
 limit_posts: 0
 
