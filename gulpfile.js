@@ -60,12 +60,13 @@ gulp.task('styles', function () {
       // The appropriate Sass command is fired
       // based on whether a file or directory is passed.
       'src/assets/scss', {
-        sourcemap: true,
+        sourcemap: false,
         style: 'expanded',
         precision: 10
       })
       .pipe($.autoprefixer(['last 2 versions', { cascade: true }]))
       .pipe(gulp.dest('src/assets/stylesheets/'))
+      .pipe(gulp.dest('serve/assets/stylesheets/'))
       .pipe($.size({title: 'styles'}))
       .pipe(reload({stream: true}));;
 });
