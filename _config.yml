@@ -1,6 +1,6 @@
 # Site settings
 title: thiagodebastos
-description:  'This is where Thiago Om keeps you connected to things he creates, thinks and feels. An Art directed blog.'
+description:  'This is where Thiago de Bastos keeps you connected to things he creates, thinks and feels. An Art directed blog.'
 url: localhost:4000 # the base hostname & protocol for your site
 
 # Same as the title etc for your site but can instead be
@@ -40,4 +40,4 @@ redcarpet:
               'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
 
 # not supported by github pages
-highlighter: false
+highlighter: pygments
