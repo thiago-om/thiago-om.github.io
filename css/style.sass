@@ -4,26 +4,22 @@
 @charset "utf-8"
 
 
+//Main Sass file
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif
-$base-font-size:   16px
-$small-font-size:  $base-font-size * 0.875
-$base-line-height: 1.5
+// Reset
+@import "_bower_components/normalize.css/normalize"
 
-$spacing-unit:     30px
+// Utilities
+@import "sass/0-utilities/utilities-dir"
 
-$text-color:       #111
-$background-color: #fdfdfd
-$brand-color:      #2a7ae2
+// Base
+@import "sass/1-base/base-dir"
 
-$grey-color:       #828282
-$grey-color-light: lighten($grey-color, 40%)
-$grey-color-dark:  darken($grey-color, 25%)
+// Modules
+@import "sass/2-modules/modules-dir"
 
-// Width of the content area
-$content-width:    800px
+// Layouts
+@import "sass/3-layouts/layouts-dir"
 
-$on-palm:          600px
-$on-laptop:        800px
 
+// States
