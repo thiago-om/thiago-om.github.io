@@ -1,26 +1,29 @@
 ---
-layout: null
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8"
 
 
-//Main Sass file
 
-// Reset
-@import "_bower_components/normalize.css/normalize"
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif
+$base-font-size:   16px
+$small-font-size:  $base-font-size * 0.875
+$base-line-height: 1.5
 
-// Utilities
-@import "sass/0-utilities/utilities-dir"
+$spacing-unit:     30px
 
-// Base
-@import "sass/1-base/base-dir"
+$text-color:       #111
+$background-color: #fdfdfd
+$brand-color:      #2a7ae2
 
-// Modules
-@import "sass/2-modules/modules-dir"
+$grey-color:       #828282
+$grey-color-light: lighten($grey-color, 40%)
+$grey-color-dark:  darken($grey-color, 25%)
 
-// Layouts
-@import "sass/3-layouts/layouts-dir"
+// Width of the content area
+$content-width:    800px
 
+$on-palm:          600px
+$on-laptop:        800px
 
-// States
