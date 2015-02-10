@@ -174,3 +174,149 @@
 "/Users/Thiago/Sites/thiagodebastos-j3/_layouts/default.html":
   mtime: 2015-02-10 14:57:20.000000000 +00:00
   deps: []
+"/Users/Thiago/Sites/thiagodebastos/_posts/work/2014-01-15-solid-nutrition-london.markdown":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps:
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/head.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/footer.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_layouts/post.html"
+"/Users/Thiago/Sites/thiagodebastos/_posts/work/2015-01-25-dawn-lister-therapy-centre.markdown":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps:
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/head.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/footer.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_layouts/post.html"
+"/Users/Thiago/Sites/thiagodebastos/_posts/creative/2015-02-01-this-is-the-year-of-creativity.markdown":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps:
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/head.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/footer.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_layouts/post.html"
+"/Users/Thiago/Sites/thiagodebastos/_posts/creative/2015-02-01-this-is-the-year-of-creativity 2.markdown":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps:
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/head.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/footer.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_layouts/post.html"
+"/Users/Thiago/Sites/thiagodebastos/_posts/thought/2015-01-29-thoughts-01.markdown":
+  mtime: 2015-02-01 14:42:52.000000000 +00:00
+  deps:
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/head.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/footer.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_layouts/post.html"
+"/Users/Thiago/Sites/thiagodebastos/_posts/thought/2015-01-29-thoughts-04.markdown":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps:
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/head.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/footer.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_layouts/post.html"
+"/Users/Thiago/Sites/thiagodebastos/404.html":
+  mtime: 2015-02-10 17:14:37.000000000 +00:00
+  deps:
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/head.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/masthead.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/coolform.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/scripts.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_layouts/default.html"
+"/Users/Thiago/Sites/thiagodebastos/about.md":
+  mtime: 2015-02-01 14:34:36.000000000 +00:00
+  deps:
+  - "/Users/Thiago/Sites/thiagodebastos/_layouts/page.html"
+"/Users/Thiago/Sites/thiagodebastos/atom.xml":
+  mtime: 2015-02-01 14:34:36.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/feed.xml":
+  mtime: 2015-02-10 15:25:32.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/index.html":
+  mtime: 2015-02-10 17:18:16.000000000 +00:00
+  deps:
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/head.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/masthead.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/coolform.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_includes/scripts.html"
+  - "/Users/Thiago/Sites/thiagodebastos/_layouts/default.html"
+"/Users/Thiago/Sites/thiagodebastos/sitemap.xml":
+  mtime: 2015-02-01 14:34:36.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/apple-touch-icon.png":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/favicon.png":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/fonts/icomoon.eot":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/fonts/icomoon.svg":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/fonts/icomoon.ttf":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/fonts/icomoon.woff":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/images/logo/logo.png":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/images/logo/logo@2x.png":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/images/logo/logo@3x.png":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/images/logo/thiago-logo@1x.png":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/images/logo/thiago-logo@2x.png":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/images/logo/thiago-logo@3x.png":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/images/touch/touch-icon-ipad-retina.png":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/images/touch/touch-icon-ipad.png":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/images/touch/touch-icon-iphone-retina.png":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/images/touch/touch-icon-iphone.png":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/javascript/coolform.js":
+  mtime: 2015-02-09 14:53:13.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/javascript/javascript.js":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/javascript/masonry-filter.js":
+  mtime: 2015-02-06 19:58:38.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/javascript/modernizr.js":
+  mtime: 2015-02-09 14:49:58.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/assets/stylesheets/style.css":
+  mtime: 2015-02-10 14:57:21.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/bower.json":
+  mtime: 2015-02-10 16:24:23.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/crossdomain.xml":
+  mtime: 2015-02-01 14:34:36.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/humans.txt":
+  mtime: 2015-02-10 15:45:14.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/robots.txt":
+  mtime: 2015-02-10 15:44:37.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/_includes/head.html":
+  mtime: 2015-02-10 18:09:56.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/_layouts/page.html":
+  mtime: 2015-02-10 17:12:34.000000000 +00:00
+  deps: []
