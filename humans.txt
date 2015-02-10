@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Thiago Om -- <role> -- @@tiggyom
+    Thiago de Bastos -- <role> -- @@thiagodebastos
 
 # THANKS
 
@@ -12,5 +12,5 @@
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3, JavaScript
-    Jekyll, Lanyon/Poole, HTML5 Boilerplate
-    Yeoman, Jekyllized
+    Jekyll, HTML5 Boilerplate
+
