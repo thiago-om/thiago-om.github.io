@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>localhost:4000/</loc>
-    <lastmod>2015-02-10T17:51:36+00:00</lastmod>
+    <loc>http://thiagodebastos.com/</loc>
+    <lastmod>2015-02-10T16:08:06+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
     <url>
-      <loc>localhost:4000/thought/2014/03/03/thoughts-04/</loc>
+      <loc>http://thiagodebastos.com/thought/2014/03/03/thoughts-04.html</loc>
       
         <lastmod>2014-03-03T00:00:00+00:00</lastmod>
       
@@ -21,7 +21,7 @@
     </url>
   
     <url>
-      <loc>localhost:4000/thought/2014/03/03/thoughts-01/</loc>
+      <loc>http://thiagodebastos.com/thought/2014/03/03/thoughts-01.html</loc>
       
         <lastmod>2014-03-03T00:00:00+00:00</lastmod>
       
@@ -34,7 +34,7 @@
     </url>
   
     <url>
-      <loc>localhost:4000/creative/2014/03/03/this-is-the-year-of-creativity%202/</loc>
+      <loc>http://thiagodebastos.com/creative/2014/03/03/this-is-the-year-of-creativity%202.html</loc>
       
         <lastmod>2014-03-03T00:00:00+00:00</lastmod>
       
@@ -47,7 +47,7 @@
     </url>
   
     <url>
-      <loc>localhost:4000/creative/2014/03/03/this-is-the-year-of-creativity/</loc>
+      <loc>http://thiagodebastos.com/creative/2014/03/03/this-is-the-year-of-creativity.html</loc>
       
         <lastmod>2014-03-03T00:00:00+00:00</lastmod>
       
@@ -60,7 +60,7 @@
     </url>
   
     <url>
-      <loc>localhost:4000/work/2014/03/03/dawn-lister-therapy-centre/</loc>
+      <loc>http://thiagodebastos.com/work/2014/03/03/dawn-lister-therapy-centre.html</loc>
       
         <lastmod>2014-03-03T00:00:00+00:00</lastmod>
       
@@ -73,7 +73,7 @@
     </url>
   
     <url>
-      <loc>localhost:4000/work/2014/01/15/solid-nutrition-london/</loc>
+      <loc>http://thiagodebastos.com/work/2014/01/15/solid-nutrition-london.html</loc>
       
         <lastmod>2014-01-15T00:00:00+00:00</lastmod>
       
@@ -87,22 +87,9 @@
   
   
   <url>
-    <loc>localhost:4000/404/</loc>
+    <loc>http://thiagodebastos.com/404.html</loc>
     
-      <lastmod>2015-02-10T17:51:36+00:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>localhost:4000/about/</loc>
-    
-      <lastmod>2015-02-10T17:51:36+00:00</lastmod>
+      <lastmod>2015-02-10T16:08:06+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -113,22 +100,9 @@
   </url>
   
   <url>
-    <loc>localhost:4000/atom.xml</loc>
+    <loc>http://thiagodebastos.com/about.html</loc>
     
-      <lastmod>2015-02-10T17:51:36+00:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>localhost:4000/feed.xml</loc>
-    
-      <lastmod>2015-02-10T17:51:36+00:00</lastmod>
+      <lastmod>2015-02-10T16:08:06+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -139,22 +113,9 @@
   </url>
   
   <url>
-    <loc>localhost:4000/</loc>
+    <loc>http://thiagodebastos.com/atom.xml</loc>
     
-      <lastmod>2015-02-10T17:51:36+00:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>localhost:4000/sitemap.xml</loc>
-    
-      <lastmod>2015-02-10T17:51:36+00:00</lastmod>
+      <lastmod>2015-02-10T16:08:06+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -165,9 +126,48 @@
   </url>
   
   <url>
-    <loc>localhost:4000/css/style.css</loc>
+    <loc>http://thiagodebastos.com/feed.xml</loc>
     
-      <lastmod>2015-02-10T17:51:36+00:00</lastmod>
+      <lastmod>2015-02-10T16:08:06+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://thiagodebastos.com/index.html</loc>
+    
+      <lastmod>2015-02-10T16:08:06+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://thiagodebastos.com/sitemap.xml</loc>
+    
+      <lastmod>2015-02-10T16:08:06+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://thiagodebastos.com/css/style.css</loc>
+    
+      <lastmod>2015-02-10T16:08:06+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
