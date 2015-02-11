@@ -5,7 +5,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+@import url("http://fonts.googleapis.com/css?family=Lustria|Lato:300,400,900");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -742,14 +742,14 @@ html {
   #pulldowntoggler:checked + .page-wrap .masthead__wrapper {
     top: 400px; }
   #pulldowntoggler:checked + .page-wrap .masthead {
-    border-top: 4px solid lime; }
+    border-top: 4px solid hotpink; }
   #pulldowntoggler:checked + .page-wrap .page-content {
     padding-top: 400px; }
 
 .coolform input {
   background: none;
-  border: solid 4px lime;
-  color: lime;
+  border: solid 4px hotpink;
+  color: hotpink;
   padding: 15px 40px;
   font-size: 18px;
   display: inline-block; }
@@ -757,10 +757,10 @@ html {
     outline: none; }
   .coolform input[type="text"], .coolform input[type="email"] {
     border: none;
-    border-bottom: solid 4px lime; }
+    border-bottom: solid 4px hotpink; }
   .coolform input[type="submit"]:active {
     color: white;
-    background: lime; }
+    background: hotpink; }
 .coolform .input-group {
   display: inline-block;
   margin-right: 20px;
@@ -853,7 +853,7 @@ html {
     transition: all 0.075s linear; }
   .masonry__brick:hover .masonry__brick--cover {
     top: -40px;
-    border-bottom: 3px solid aqua; }
+    border-bottom: 3px solid hotpink; }
 
 .hll {
   background-color: #ffffcc; }
@@ -1060,12 +1060,16 @@ html {
     transform: translateY(-50%); }
     .site-footer .site-footer__content a, .site-footer .site-footer__content a:visited {
       text-decoration: none; }
-    .site-footer .site-footer__content img {
-      height: 54px;
-      width: 54px;
+    .site-footer .site-footer__content .footer__logo {
+      font-family: "Lato";
+      font-weight: 900;
+      font-size: 2rem;
       padding: 10px;
       vertical-align: middle; }
-    .site-footer .site-footer__content span {
+    .site-footer .site-footer__content .footer__blurb {
+      font-family: "Lato";
+      font-weight: 300;
+      font-size: 1.1rem;
       opacity: 0.6;
       text-transform: uppercase; }
 
@@ -1073,7 +1077,7 @@ html {
   list-style-type: none;
   float: right;
   padding-right: 20px;
-  margin-top: -20px;
+  margin-top: -15px;
   font-size: 1.5em;
   opacity: 0.65; }
   .pagination__btns li {

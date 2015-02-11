@@ -48,7 +48,7 @@ $midnight-blue                : #036;
 $black                        : #000;
 
 // Main color palette
-$color-primary                : lime;
+$color-primary                : hotpink;
 $color-secondary              : $grey-dark;
 $color-accent                 : lighten($grey-light, 5%);
 $color-shadow                 : rgba($black, .125);
@@ -114,7 +114,7 @@ $base-line-height             : 24;
  * @type string
  */
 
-$google-fonts-url          : 'http://fonts.googleapis.com/css?family=Lato:300,400,900';
+$google-fonts-url          : 'http://fonts.googleapis.com/css?family=Lustria|Lato:300,400,900';
 
 /**
  * (optional) names of webfonts imports
@@ -128,14 +128,14 @@ $fonts                     : 'icomoon';
  * @type string
  */
 
-$font-family-sans             : 'Ubuntu Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-sans             : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 /**
  * define font stack used for serifs
  * @type string
  */
 
-$font-family-serif            : 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
+$font-family-serif            : 'Lustria', Georgia, 'Times New Roman', Times, serif;
 
 /**
  * define font stack used for monospaced copy
