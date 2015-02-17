@@ -1,0 +1,28 @@
+---
+layout: default
+title:  Home
+---
+
+<div class="loop-wrap">
+    <div class="masonry">
+
+        {% for post in site.posts %}
+
+        <a href="{{ post.url }}" class="masonry__brick category--{{ post.category }}">
+            <h2 class="masonry__brick--title">{{ post.title }}</h2>
+            <em class="masonry__brick--date">{{ post.date | date: "%-d %B %Y" }}</em>
+            <img class="masonry__brick--cover" />
+        </a>
+    {% endfor %}
+
+        {% for work in site.work %}
+
+        <a href="{{ work.url }}" class="masonry__brick category--{{ work.category }}">
+            <h2 class="masonry__brick--title">{{ work.title }}</h2>
+            <em class="masonry__brick--date">{{ work.date | date: "%-d %B %Y" }}</em>
+            <img class="masonry__brick--cover" />
+        </a>
+    {% endfor %}
+    </div>
+</div>
+
