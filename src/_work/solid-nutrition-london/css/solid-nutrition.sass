@@ -1,24 +1,135 @@
+/* Reset
+@import '_normalize'
+
+/* Variables
+$brand-primary: #003D73
+$brand-secondary: gold
+$header-font: "Open Sans"
+$body-font: "Lato"
+
 h1
-  font-size: 56px
+    font-size: 56px
+
 h2
-  font-size: 42px
+    font-size: 42px
+    line-height: 57px
+h3
+    font-size: 28px
+
 h1, h2, h3, h4
-  font:
-    family: 'Open Sans'
-    weight: 800
-h2, h3, h4
-  font-weight: 700
+    font-family: $header-font
+    color: $brand-primary
+    margin: 0
+
+h1, h2
+    font-weight: 900
+
 p, li
-  font:
-    family: 'Lato'
-.hero img.protein
-  margin-bottom: -30px
+    font:
+        family: $body-font
+
+html
+    width: 1100px
+    // min-width: 1100px
+    // max-width: 2000px
+    margin: 0 auto
+
+/* set parent as flex
+.page-wrap
+    display: flex
+    flex-direction: column
+
+.column
+    flex: 1
+
+.section-content
+    display: flex
+p
+    text-align: justify
+    padding: 0 20px 0 0
+
+/* display protein tubs on top of profile image
+.hero
+    align-items: flex-end
+    position: relative
+    height: 500px
+    .alina
+        position: absolute
+        bottom: 0
+        left: 0
+    .protein
+        position: absolute
+        bottom: -26px
+        right: 0
+
 .header
-  background-color: #0D497C
-  color: white
-  padding: 10px 15px
-  h1
-    line-height: 0.6em
-  h2
-    color: gold
-    line-height: 0.4em
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 120px
+    padding: 20px 15px
+    margin-bottom: 20px
+    background-color: $brand-primary
+    color: white
+    h1, h2
+        padding: 20px 0 25px
+    .project-name
+        color: white
+        line-height: 0.6em
+    .sub-heading
+        color: $brand-secondary
+        line-height: 0.4em
+        font-size: 42px
+
+
+
+.overview
+    height: 540px
+    .summary
+
+    .snl-logo
+        margin: auto auto
+    .brief
+        margin: auto auto
+
+.solution
+    flex-grow: 1
+    .section-header
+        text-align: center
+        .insight, .branding
+            justify-content: center
+            align-items: center
+
+.visual-design
+    display: flex
+    flex-direction: column
+    .section-header
+        align-self: center
+    .user-experience
+        display: flex
+        flex-direction: row
+        ul
+            list-style: none
+        .ux-summary
+            flex: 1
+        .ux-feature
+            align-self: flex-end
+            flex: 1
+            padding-left: 125px
+            span
+                margin: auto 0
+            td
+                vertical-align: middle
+            .circle
+                width: 108px
+                height: 108px
+                background-color: $brand-primary
+                border-radius: 50%
+                color: white
+                vertical-align: middle
+
+
+.technology
+    .tech-feature
+
+.related-work
