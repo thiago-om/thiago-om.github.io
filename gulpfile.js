@@ -8,6 +8,10 @@ var merge = require("merge-stream");
 var runSequence = require('run-sequence');
 var reload = browserSync.reload;
 var bs;
+var jpegoptim = require('imagemin-jpegoptim');
+var pngquant = require('imagemin-pngquant');
+var optipng = require('imagemin-optipng');
+var svgo = require('imagemin-svgo');
 
 gulp.task("clean:dev", del.bind(null, ["serve"]));
 
@@ -27,7 +31,7 @@ gulp.task("jekyll:prod", $.shell.task("jekyll build --config _config.yml,_config
 // Compiles the SASS files and moves them into the "assets/stylesheets" directory
 
 gulp.task('styles', function () {
-  return gulp.src("src/assets/sass/style.sass")
+  return gulp.src('src/assets/_sass/style.sass')
     //.pipe($.sourcemaps.init())
     .pipe($.sass({
       indentedSyntax: true, // Enable .sass syntax!
@@ -35,8 +39,23 @@ gulp.task('styles', function () {
       errLogToConsole: true}))
     //.pipe($.sourcemaps.write())
     .pipe($.autoprefixer({ browsers: ['last 1 version'] }))
-    .pipe(gulp.dest("src/assets/stylesheets/"))
-    .pipe(gulp.dest("serve/assets/stylesheets/"))
+    .pipe(gulp.dest("src/assets/stylesheets"))
+    .pipe(gulp.dest("serve/assets/stylesheets"))
+    .pipe(reload({stream:true}));
+});
+
+// Styles for collections
+gulp.task('styles:collections', function () {
+  return gulp.src('src/_work/**/*.sass')
+    //.pipe($.sourcemaps.init())
+    .pipe($.sass({
+      indentedSyntax: true, // Enable .sass syntax!
+      imagePath: 'assets/images', // Used by the image-url helper
+      errLogToConsole: true}))
+    //.pipe($.sourcemaps.write())
+    .pipe($.autoprefixer({ browsers: ['last 1 version'] }))
+    .pipe(gulp.dest("src/_work/"))
+    .pipe(gulp.dest("serve/work/"))
     .pipe(reload({stream:true}));
 });
 
@@ -45,12 +64,24 @@ gulp.task('styles', function () {
 gulp.task("images", function () {
   return gulp.src("src/assets/images/**")
     .pipe($.changed("site/assets/images"))
-    .pipe($.imagemin({
-      progressive: true,
-      interlaced: true
-    }))
-    .pipe(gulp.dest("site/assets/images"))
+    .pipe(pngquant({quality: '65-80', speed: 4})())
+    .pipe(optipng({optimizationLevel: 3})())
+    .pipe(jpegoptim({max: 70})())
+    .pipe(svgo()())
+    .pipe(gulp.dest('site/assets/images'))
     .pipe($.size({title: "images"}));
+});
+
+// Optimizes images in work section
+gulp.task("images:work", function () {
+  return gulp.src("src/_work/**/*.{png,jpg,jpeg,gif,svg}")
+    .pipe($.changed("site/work"))
+    .pipe(pngquant({quality: '65-80', speed: 4})())
+    .pipe(optipng({optimizationLevel: 3})())
+    .pipe(jpegoptim({max: 70})())
+    .pipe(svgo()())
+    .pipe(gulp.dest('site/work'))
+    .pipe($.size({title: "images:work"}));
 });
 
 // Copy over fonts to the "site" directory
@@ -147,9 +178,11 @@ gulp.task('serve:dev', ['styles', 'jekyll:dev'], function () {
 // reload the website accordingly. Update or add other files you need to be watched.
 gulp.task("watch", function () {
   gulp.watch(['src/**/*.{md,html,xml,txt,js}'], ['jekyll-rebuild']);
-  gulp.watch(["serve/assets/stylesheets/*.css"], reload);
-  gulp.watch(['src/assets/sass/**/*.{scss,sass}'], ['styles']);
-  gulp.watch(['src/assets/images/**'], ['images'], reload);
+  gulp.watch(['serve/assets/stylesheets/*.css', 'serve/assets/work-assets/**/*.css'], reload);
+  gulp.watch(['src/assets/_sass/**/*.{scss,sass}'], ['styles']);
+  gulp.watch('src/_work/**/*.sass', ['styles:collections']);
+  gulp.watch('src/assets/images/**', ['images'], reload);
+  gulp.watch('src/_work/**', ['images:work'], reload);
 });
 
 // Serve the site after optimizations to see that everything looks fine

@@ -7,6 +7,10 @@ url: localhost:4000 # the base hostname & protocol for your site
 source: src
 destination: serve
 
+# Used to prevent Jekyll from copying over unprocessed files
+exclude:
+  ['*.sass', '*.scss']
+
 # Same as the title etc for your site but can instead be
 # called by using 'site.author.name' and so on
 author:
