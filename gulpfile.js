@@ -182,7 +182,7 @@ gulp.task("watch", function () {
   gulp.watch(['src/assets/_sass/**/*.{scss,sass}'], ['styles']);
   gulp.watch('src/_work/**/*.sass', ['styles:collections']);
   gulp.watch('src/assets/images/**', ['images'], reload);
-  gulp.watch('src/_work/**', ['images:work'], reload);
+  gulp.watch('src/_work/**/.{png,jpg,jpeg,gif,svg}', ['images:work'], reload);
 });
 
 // Serve the site after optimizations to see that everything looks fine
