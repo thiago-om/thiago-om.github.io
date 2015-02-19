@@ -40,7 +40,7 @@ limit_posts: 10
 # Permalink structure and pagination options
 relative_permalinks: true
 permalink: pretty
-paginate: all
+paginate: nil
 paginate_path: 'page:num'
 excerpt_separator: 'more'
 
