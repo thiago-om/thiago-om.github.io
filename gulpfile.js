@@ -45,7 +45,7 @@ gulp.task('styles', function () {
 });
 
 // Styles for collections
-gulp.task('styles:collections', function () {
+gulp.task('styles:work', function () {
   return gulp.src('src/_work/**/*.sass')
     //.pipe($.sourcemaps.init())
     .pipe($.sass({
@@ -164,7 +164,7 @@ gulp.task("doctor", $.shell.task("jekyll doctor"));
 // BrowserSync will serve our site on a local server for us and other devices to use
 // It will also autoreload across all devices as well as keep the viewport synchronized
 // between them.
-gulp.task('serve:dev', ['styles', 'jekyll:dev'], function () {
+gulp.task('serve:dev', ['styles', 'styles:work', 'jekyll:dev'], function () {
   bs = browserSync({
     notify: true,
     // tunnel: '',
@@ -178,10 +178,12 @@ gulp.task('serve:dev', ['styles', 'jekyll:dev'], function () {
 // reload the website accordingly. Update or add other files you need to be watched.
 gulp.task("watch", function () {
   gulp.watch(['src/**/*.{md,html,xml,txt,js}'], ['jekyll-rebuild']);
-  gulp.watch(['serve/assets/stylesheets/*.css', 'serve/assets/work-assets/**/*.css'], reload);
+  gulp.watch(['serve/**/*.{md,html,xml,txt,js}'], reload);
+  gulp.watch('serve/assets/stylesheets/*.css', reload);
   gulp.watch(['src/assets/_sass/**/*.{scss,sass}'], ['styles']);
-  gulp.watch('src/_work/**/*.sass', ['styles:collections']);
   gulp.watch('src/assets/images/**', ['images'], reload);
+  // watch for changes in work collection
+  gulp.watch('src/_work/**/*.sass', ['styles:work']);
   gulp.watch('src/_work/**/.{png,jpg,jpeg,gif,svg}', ['images:work'], reload);
 });
 
@@ -215,6 +217,6 @@ gulp.task('build', function(callback) {
 // it and outputs it to "./site"
 gulp.task('publish', function(callback) {
   runSequence(['build'],
-              ['html', 'copy', 'images', 'fonts' ],
+              ['html', 'copy', 'images', 'images:work', 'fonts' ],
               callback);
 });
