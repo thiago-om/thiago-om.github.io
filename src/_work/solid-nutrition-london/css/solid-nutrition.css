@@ -391,32 +391,43 @@ p {
   background-color: #003D73;
   color: white; }
   .header h1, .header h2 {
-    padding: 20px 0 25px; }
+    padding: em(20px) 0 em(25px); }
   .header .project-name {
     color: white;
     line-height: 0.6em; }
   .header .sub-heading {
     color: gold;
     line-height: 0.4em;
-    font-size: 42px; }
+    font-size: em(42px); }
 
 .overview {
-  height: 540px; }
+  margin-bottom: 3em; }
   .overview .snl-logo {
     margin: auto auto; }
+    .overview .snl-logo img {
+      width: 331px;
+      height: 339px; }
   .overview .brief {
     margin: auto auto; }
 
-.solution {
-  -webkit-flex-grow: 1;
-          flex-grow: 1; }
-  .solution .section-header {
-    text-align: center; }
-    .solution .section-header .insight, .solution .section-header .branding {
-      -webkit-justify-content: center;
-              justify-content: center;
-      -webkit-align-items: center;
-              align-items: center; }
+.solution .section-header {
+  text-align: center; }
+.solution .section-content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+          flex-direction: row; }
+  .solution .section-content .insight, .solution .section-content .branding {
+    -webkit-align-self: center;
+            align-self: center;
+    -webkit-flex: 1;
+            flex: 1; }
+.solution .alina-profile {
+  -webkit-flex: 1;
+          flex: 1; }
+  .solution .alina-profile img {
+    width: 336px;
+    height: 549px; }
 
 .visual-design {
   display: -webkit-flex;
@@ -426,11 +437,18 @@ p {
   .visual-design .section-header {
     -webkit-align-self: center;
             align-self: center; }
+  .visual-design > p {
+    width: 37em;
+    -webkit-align-self: center;
+            align-self: center;
+    text-align: center;
+    margin: 3em 0; }
   .visual-design .user-experience {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    margin-top: 80px; }
     .visual-design .user-experience ul {
       list-style: none; }
     .visual-design .user-experience .ux-summary {
@@ -439,18 +457,19 @@ p {
     .visual-design .user-experience .ux-feature {
       -webkit-align-self: flex-end;
               align-self: flex-end;
-      -webkit-flex: 1;
-              flex: 1;
+      -webkit-flex: 2;
+              flex: 2;
       padding-left: 125px; }
       .visual-design .user-experience .ux-feature span {
         margin: auto 0; }
-      .visual-design .user-experience .ux-feature td {
-        vertical-align: middle; }
+      .visual-design .user-experience .ux-feature th {
+        padding: 1em; }
       .visual-design .user-experience .ux-feature .circle {
-        width: 108px;
-        height: 108px;
         background-color: #003D73;
         border-radius: 50%;
         color: white;
-        vertical-align: middle; }
+        height: 3em;
+        min-width: 3.5em;
+        padding: 2.5em 1em 0 1em;
+        text-align: center; }
 
