@@ -1,0 +1,16 @@
+<div class="related">
+    <h2 class="section-header">Related Work.</h2>
+    <ul class="work-grid">
+        {% for work in site.work limit:3 %}
+        <li>
+            <a href="{{ work.url }}">
+            {% if work.relatedimageurl %}
+                <img src="{{ work.relatedimageurl }}"></a>
+            {% else %}
+                <img src="http://lorempixel.com/325/250/abstract"></a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<!-- .related -->

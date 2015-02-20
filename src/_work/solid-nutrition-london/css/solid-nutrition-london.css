@@ -1,4 +1,7 @@
-/* Reset */
+@charset "UTF-8";
+/* import variables before global defaults */
+/* Global styles for work collection */
+/* global reset */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -319,6 +322,12 @@ td, th {
   padding: 0; }
 
 /* Variables */
+html {
+  width: 1100px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased; }
+
+/* typography */
 h1 {
   font-size: 56px; }
 
@@ -335,25 +344,62 @@ h1, h2, h3, h4 {
   margin: 0; }
 
 h1, h2 {
-  font-weight: 900; }
+  font-weight: 800; }
 
-p, li {
+p, li, span {
   font-family: "Lato"; }
 
-html {
-  width: 1100px;
-  margin: 0 auto; }
+/* meta information */
+.meta {
+  font-size: 12px;
+  padding: 20px 0;
+  margin-top: 0; }
+
+.meta__wrap {
+  padding: 0 5px 0 0; }
+
+.meta__wrap > span {
+  padding: 5px;
+  vertical-align: middle;
+  position: relative; }
+
+.meta > div {
+  display: inline;
+  text-transform: uppercase; }
+
+.meta--lead {
+  background: #003D73;
+  color: gold; }
+
+.meta--follow {
+  background: gold;
+  color: #003D73; }
+  .meta--follow span:after {
+    content: ' • ';
+    opacity: 0.5; }
+  .meta--follow span:last-of-type:after {
+    content: ''; }
+
+.social > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 7px; }
+
+.tweet {
+  margin-bottom: -3px;
+  width: 77px; }
+
+.gplus {
+  margin-bottom: -3px; }
 
 /* set parent as flex */
-.page-wrap {
+.page-wrap, .related {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
-          flex-direction: column; }
-
-.column {
-  -webkit-flex: 1;
-          flex: 1; }
+          flex-direction: column;
+  overflow: hidden; }
 
 .section-content {
   display: -webkit-flex;
@@ -363,6 +409,163 @@ p {
   text-align: justify;
   padding: 0 20px 0 0; }
 
+/* fancy margins */
+.fancy-margin, .visual-design .section-header, .solution .section-header, .technology .section-header, .creative .section-header, .related h2.section-header {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  padding: 0 .5em; }
+  .fancy-margin span, .visual-design .section-header span, .solution .section-header span, .technology .section-header span, .creative .section-header span, .related h2.section-header span {
+    position: relative; }
+  .fancy-margin:before, .visual-design .section-header:before, .solution .section-header:before, .technology .section-header:before, .creative .section-header:before, .related h2.section-header:before, .fancy-margin:after, .visual-design .section-header:after, .solution .section-header:after, .technology .section-header:after, .creative .section-header:after, .related h2.section-header:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    border-top: 2px solid gold;
+    top: 50%; }
+  .fancy-margin:after, .visual-design .section-header:after, .solution .section-header:after, .technology .section-header:after, .creative .section-header:after, .related h2.section-header:after {
+    left: 100%; }
+  .fancy-margin:before, .visual-design .section-header:before, .solution .section-header:before, .technology .section-header:before, .creative .section-header:before, .related h2.section-header:before {
+    right: 100%; }
+
+/* set sections as flex items */
+.overview, .visual-design, .solution, .technology, .creative {
+  margin-top: 5em;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column; }
+
+.overview .section-header, .visual-design .section-header, .technology .section-header, .creative .section-header {
+  margin-bottom: 1em; }
+
+.visual-design .section-header, .solution .section-header, .technology .section-header, .creative .section-header {
+  -webkit-align-self: center;
+          align-self: center; }
+
+/* techonology section */
+.technology {
+  margin-top: 80px; }
+  .technology .tech-logos, .technology .tech-copy {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    text-align: center; }
+    .technology .tech-logos > *, .technology .tech-copy > * {
+      -webkit-flex: 1;
+              flex: 1; }
+  .technology .tech-logos {
+    margin: 3em 0; }
+  .technology .tech-copy p {
+    padding: 2em; }
+
+.related {
+  margin-top: 4em; }
+  .related h2.section-header {
+    -webkit-align-self: center;
+            align-self: center; }
+  .related .work-grid {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    margin-top: 4em; }
+    .related .work-grid li {
+      -webkit-flex: 1;
+              flex: 1;
+      list-style: none; }
+      .related .work-grid li img {
+        transition: -webkit-filter 0.6s ease, filter 0.6s ease; }
+      .related .work-grid li img:hover {
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%); }
+
+.work-footer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  border-top: 2px solid gold;
+  margin-top: 4em;
+  padding: 2em 0; }
+  .work-footer .footer__block {
+    -webkit-flex: 1;
+            flex: 1;
+    padding: 1em; }
+  .work-footer .footer__block--title {
+    display: block; }
+  .work-footer .footer__block--contact {
+    font-weight: 800; }
+
+/* Site-wide Global Variables */
+/**
+ * CSS layout debugging
+ * @link http://pesticide.io/
+ * @type boolean
+ */
+/**
+ * Define width for browsers w/out media query support
+ * @link http://jakearchibald.github.com/sass-ie/
+ * @type boolean
+ */
+/**
+ * Turn on/off IE specific styles
+ * @link http://jakearchibald.github.com/sass-ie/
+ * @type boolean
+ */
+/**
+ * Base font size in used in _mixins.sass
+ * @type number
+ */
+/**
+ * Base line-height in used in _mixins.sass
+ * @type number
+ */
+/**
+ * (optional) URL for Google Fonts import
+ * @type string
+ */
+/**
+ * (optional) names of webfonts imports
+ * @type array
+ */
+/**
+ * define font stack used for sans-serifs
+ * @type string
+ */
+/**
+ * define font stack used for serifs
+ * @type string
+ */
+/**
+ * define font stack used for monospaced copy
+ * @type string
+ */
+/**
+ * define font stack used for headings
+ * @requires {variable} $font-family-serif
+ * @type string
+ */
+/**
+ * define font stack used for paragraphs
+ * @requires {variable} font-family-sans
+ * @type string
+ */
+/**
+ * Define z-indexes for various elements
+ * @link http://www.sitepoint.com/using-sass-maps/
+ * @type number
+ */
 /* display protein tubs on top of profile image */
 .hero {
   -webkit-align-items: flex-end;
@@ -387,41 +590,50 @@ p {
           justify-content: center;
   height: 120px;
   padding: 20px 15px;
-  margin-bottom: 20px;
   background-color: #003D73;
   color: white; }
-  .header h1, .header h2 {
-    padding: em(20px) 0 em(25px); }
   .header .project-name {
-    color: white;
-    line-height: 0.6em; }
+    color: white; }
   .header .sub-heading {
     color: gold;
-    line-height: 0.4em;
     font-size: em(42px); }
 
-.overview {
-  margin-bottom: 3em; }
-  .overview .snl-logo {
-    margin: auto auto; }
-    .overview .snl-logo img {
-      width: 331px;
-      height: 339px; }
-  .overview .brief {
-    margin: auto auto; }
+.overview, .visual-design, .solution, .technology {
+  margin-top: 5em;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column; }
 
-.solution .section-header {
-  text-align: center; }
+.overview .section-header, .visual-design .section-header, .technology .section-header {
+  margin-bottom: 1em; }
+
+.visual-design .section-header, .solution .section-header, .technology .section-header {
+  -webkit-align-self: center;
+          align-self: center; }
+
+.overview .summary, .overview .snl-logo, .overview .brief {
+  -webkit-flex: 1;
+          flex: 1; }
+.overview .snl-logo {
+  margin: auto auto; }
+  .overview .snl-logo img {
+    width: 331px;
+    height: 339px; }
+.overview .brief {
+  margin: auto auto; }
+
 .solution .section-content {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
           flex-direction: row; }
-  .solution .section-content .insight, .solution .section-content .branding {
+  .solution .section-content > div {
     -webkit-align-self: center;
             align-self: center;
     -webkit-flex: 1;
-            flex: 1; }
+            flex: 1;
+    padding: 2em; }
 .solution .alina-profile {
   -webkit-flex: 1;
           flex: 1; }
@@ -429,47 +641,44 @@ p {
     width: 336px;
     height: 549px; }
 
-.visual-design {
+.visual-design > p {
+  width: 37em;
+  -webkit-align-self: center;
+          align-self: center;
+  text-align: center; }
+.visual-design img {
+  margin: 3em 0; }
+.visual-design .user-experience {
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: column;
-          flex-direction: column; }
-  .visual-design .section-header {
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  margin-top: 80px; }
+  .visual-design .user-experience ul {
+    list-style: none; }
+  .visual-design .user-experience .ux-summary {
+    -webkit-flex: 1;
+            flex: 1;
     -webkit-align-self: center;
             align-self: center; }
-  .visual-design > p {
-    width: 37em;
-    -webkit-align-self: center;
-            align-self: center;
-    text-align: center;
-    margin: 3em 0; }
-  .visual-design .user-experience {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-            flex-direction: row;
-    margin-top: 80px; }
-    .visual-design .user-experience ul {
-      list-style: none; }
-    .visual-design .user-experience .ux-summary {
-      -webkit-flex: 1;
-              flex: 1; }
-    .visual-design .user-experience .ux-feature {
-      -webkit-align-self: flex-end;
-              align-self: flex-end;
-      -webkit-flex: 2;
-              flex: 2;
-      padding-left: 125px; }
-      .visual-design .user-experience .ux-feature span {
-        margin: auto 0; }
-      .visual-design .user-experience .ux-feature th {
-        padding: 1em; }
-      .visual-design .user-experience .ux-feature .circle {
-        background-color: #003D73;
-        border-radius: 50%;
-        color: white;
-        height: 3em;
-        min-width: 3.5em;
-        padding: 2.5em 1em 0 1em;
-        text-align: center; }
-
+  .visual-design .user-experience .ux-feature {
+    -webkit-align-self: flex-end;
+            align-self: flex-end;
+    -webkit-flex: 2;
+            flex: 2;
+    padding-left: 125px; }
+    .visual-design .user-experience .ux-feature span {
+      margin: auto 0; }
+    .visual-design .user-experience .ux-feature th {
+      padding: 1em; }
+    .visual-design .user-experience .ux-feature .circle {
+      background-color: #003D73;
+      border-radius: 50%;
+      color: gold;
+      height: 4em;
+      width: 4.5em;
+      padding: 2.5em 1em 0 1em;
+      text-align: center;
+      font-family: "Open Sans";
+      font-weigth: 900;
+      font-size: 1.3em; }
