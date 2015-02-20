@@ -156,10 +156,13 @@
   mtime: 2015-02-17 18:20:28.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/assets/javascript/modernizr.js":
-  mtime: 2015-02-20 04:25:36.000000000 +00:00
+  mtime: 2015-02-20 13:50:29.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/assets/javascript/social-media.js":
+  mtime: 2015-02-20 04:12:51.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/assets/stylesheets/style.css":
-  mtime: 2015-02-20 02:16:16.000000000 +00:00
+  mtime: 2015-02-20 04:34:15.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/crossdomain.xml":
   mtime: 2015-02-17 18:20:28.000000000 +00:00
@@ -198,28 +201,28 @@
   mtime: 2015-02-20 04:19:41.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/alina-profile.png":
-  mtime: 2015-02-18 10:05:42.000000000 +00:00
+  mtime: 2015-02-20 04:30:01.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/alina-weights.png":
-  mtime: 2015-02-18 16:35:01.000000000 +00:00
+  mtime: 2015-02-20 04:30:01.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/alina_large.jpg":
   mtime: 2015-02-12 12:22:21.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/alina_large.png":
-  mtime: 2015-02-18 16:53:06.000000000 +00:00
+  mtime: 2015-02-20 04:30:01.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/logo_lg_whitebg.png":
-  mtime: 2015-02-18 11:19:53.000000000 +00:00
+  mtime: 2015-02-20 04:30:01.000000000 +00:00
   deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/Protein.png":
-  mtime: 2015-02-18 10:05:42.000000000 +00:00
+"/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/protein.png":
+  mtime: 2015-02-20 04:30:01.000000000 +00:00
   deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/Protein@2x.png":
-  mtime: 2015-02-18 10:05:42.000000000 +00:00
+"/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/protein@2x.png":
+  mtime: 2015-02-20 04:30:02.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/responsive-showcase@1x.png":
-  mtime: 2015-02-18 10:05:42.000000000 +00:00
+  mtime: 2015-02-20 04:30:02.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_work/work-assets/img/pagespeed.png":
   mtime: 2015-02-18 10:05:42.000000000 +00:00
@@ -241,40 +244,4 @@
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_layouts/page.html":
   mtime: 2015-02-17 18:20:28.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/work-head.html":
-  mtime: 2015-02-20 02:19:35.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/footer.html":
-  mtime: 2015-02-17 18:20:28.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/masthead.html":
-  mtime: 2015-02-17 18:20:28.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_layouts/post.html":
-  mtime: 2015-02-17 18:20:28.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/coolform.html":
-  mtime: 2015-02-17 18:20:28.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/scripts.html":
-  mtime: 2015-02-20 01:56:56.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_layouts/default.html":
-  mtime: 2015-02-19 17:11:22.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/work-related.html":
-  mtime: 2015-02-19 19:13:12.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/work-footer.html":
-  mtime: 2015-02-20 01:57:31.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_layouts/work.html":
-  mtime: 2015-02-20 03:49:14.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/assets/javascript/facebook.js":
-  mtime: 2015-02-20 02:21:27.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/assets/javascript/social-media.js":
-  mtime: 2015-02-20 04:12:51.000000000 +00:00
   deps: []
