@@ -1,12 +1,14 @@
 ---
-"/Users/Thiago/Sites/thiagodebastos/src/_work/dawn-lister-therapy-centre.markdown":
-  mtime: 2015-02-17 18:20:28.000000000 +00:00
+"/Users/Thiago/Sites/thiagodebastos/src/_work/dawn-lister-therapy-centre.html":
+  mtime: 2015-02-20 03:35:24.000000000 +00:00
   deps:
+  - "/Users/Thiago/Sites/thiagodebastos/src/_includes/work-meta.html"
   - "/Users/Thiago/Sites/thiagodebastos/src/_includes/work-head.html"
+  - "/Users/Thiago/Sites/thiagodebastos/src/_includes/work-related.html"
   - "/Users/Thiago/Sites/thiagodebastos/src/_includes/work-footer.html"
   - "/Users/Thiago/Sites/thiagodebastos/src/_layouts/work.html"
 "/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london.html":
-  mtime: 2015-02-19 19:12:41.000000000 +00:00
+  mtime: 2015-02-20 03:35:21.000000000 +00:00
   deps:
   - "/Users/Thiago/Sites/thiagodebastos/src/_includes/work-meta.html"
   - "/Users/Thiago/Sites/thiagodebastos/src/_includes/work-head.html"
@@ -148,16 +150,16 @@
   mtime: 2015-02-17 18:20:28.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/assets/javascript/main.js":
-  mtime: 2015-02-17 18:20:28.000000000 +00:00
+  mtime: 2015-02-19 23:09:19.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/assets/javascript/masonry-filter.js":
   mtime: 2015-02-17 18:20:28.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/assets/javascript/modernizr.js":
-  mtime: 2015-02-19 17:30:26.000000000 +00:00
+  mtime: 2015-02-20 02:12:03.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/assets/stylesheets/style.css":
-  mtime: 2015-02-19 17:57:04.000000000 +00:00
+  mtime: 2015-02-20 02:16:16.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/crossdomain.xml":
   mtime: 2015-02-17 18:20:28.000000000 +00:00
@@ -168,8 +170,32 @@
 "/Users/Thiago/Sites/thiagodebastos/src/robots.txt":
   mtime: 2015-02-17 18:20:28.000000000 +00:00
   deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_work/dawn-lister-therapy-centre/css/dawn-lister-therapy-centre.css":
+  mtime: 2015-02-20 04:16:54.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_work/dawn-lister-therapy-centre/img/hero.png":
+  mtime: 2015-02-20 00:26:17.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_work/dawn-lister-therapy-centre/img/imac-showcase.png":
+  mtime: 2015-02-20 00:56:27.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_work/dawn-lister-therapy-centre/img/iphone-showcase.png":
+  mtime: 2015-02-20 00:57:10.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_work/dawn-lister-therapy-centre/img/logo.png":
+  mtime: 2015-02-20 00:55:01.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_work/dawn-lister-therapy-centre/img/sketch-mockup-1.png":
+  mtime: 2015-02-20 00:58:02.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_work/dawn-lister-therapy-centre/img/sketch-mockup-2.png":
+  mtime: 2015-02-20 00:58:02.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_work/dawn-lister-therapy-centre/img/sketch-mockup-3.png":
+  mtime: 2015-02-20 00:58:02.000000000 +00:00
+  deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/css/solid-nutrition-london.css":
-  mtime: 2015-02-19 18:54:00.000000000 +00:00
+  mtime: 2015-02-20 04:16:54.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/alina-profile.png":
   mtime: 2015-02-18 10:05:42.000000000 +00:00
@@ -186,9 +212,6 @@
 "/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/logo_lg_whitebg.png":
   mtime: 2015-02-18 11:19:53.000000000 +00:00
   deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/pagespeed.png":
-  mtime: 2015-02-18 10:05:42.000000000 +00:00
-  deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/Protein.png":
   mtime: 2015-02-18 10:05:42.000000000 +00:00
   deps: []
@@ -198,17 +221,20 @@
 "/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/responsive-showcase@1x.png":
   mtime: 2015-02-18 10:05:42.000000000 +00:00
   deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/woocommerce.png":
+"/Users/Thiago/Sites/thiagodebastos/src/_work/work-assets/img/pagespeed.png":
   mtime: 2015-02-18 10:05:42.000000000 +00:00
   deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/WP.png":
+"/Users/Thiago/Sites/thiagodebastos/src/_work/work-assets/img/soundcloud.png":
+  mtime: 2015-02-20 00:01:52.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_work/work-assets/img/woocommerce.png":
   mtime: 2015-02-18 10:05:42.000000000 +00:00
   deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/work-head.html":
-  mtime: 2015-02-19 17:37:39.000000000 +00:00
+"/Users/Thiago/Sites/thiagodebastos/src/_work/work-assets/img/WP.png":
+  mtime: 2015-02-18 10:05:42.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_includes/work-meta.html":
-  mtime: 2015-02-19 16:33:31.000000000 +00:00
+  mtime: 2015-02-20 04:18:42.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_includes/head.html":
   mtime: 2015-02-17 18:20:28.000000000 +00:00
@@ -216,17 +242,14 @@
 "/Users/Thiago/Sites/thiagodebastos/src/_layouts/page.html":
   mtime: 2015-02-17 18:20:28.000000000 +00:00
   deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/work-footer.html":
-  mtime: 2015-02-19 17:11:20.000000000 +00:00
+"/Users/Thiago/Sites/thiagodebastos/src/_includes/work-head.html":
+  mtime: 2015-02-20 02:19:35.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_includes/footer.html":
   mtime: 2015-02-17 18:20:28.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_includes/masthead.html":
   mtime: 2015-02-17 18:20:28.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_layouts/work.html":
-  mtime: 2015-02-19 19:00:38.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_layouts/post.html":
   mtime: 2015-02-17 18:20:28.000000000 +00:00
@@ -235,18 +258,23 @@
   mtime: 2015-02-17 18:20:28.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_includes/scripts.html":
-  mtime: 2015-02-17 18:20:28.000000000 +00:00
+  mtime: 2015-02-20 01:56:56.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_layouts/default.html":
   mtime: 2015-02-19 17:11:22.000000000 +00:00
   deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_work/dawn-lister-therapy-centre.html":
-  mtime: 2015-02-19 18:58:43.000000000 +00:00
-  deps:
-  - "/Users/Thiago/Sites/thiagodebastos/src/_includes/work-head.html"
-  - "/Users/Thiago/Sites/thiagodebastos/src/_includes/work-footer.html"
-  - "/Users/Thiago/Sites/thiagodebastos/src/_layouts/work.html"
-  - "/Users/Thiago/Sites/thiagodebastos/src/_includes/work-related.html"
 "/Users/Thiago/Sites/thiagodebastos/src/_includes/work-related.html":
   mtime: 2015-02-19 19:13:12.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_includes/work-footer.html":
+  mtime: 2015-02-20 01:57:31.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_layouts/work.html":
+  mtime: 2015-02-20 03:49:14.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/assets/javascript/facebook.js":
+  mtime: 2015-02-20 02:21:27.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/assets/javascript/social-media.js":
+  mtime: 2015-02-20 04:12:51.000000000 +00:00
   deps: []
