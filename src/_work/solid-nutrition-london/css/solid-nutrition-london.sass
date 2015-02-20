@@ -1,52 +1,10 @@
-/* Reset
-@import '_normalize'
+/* import variables before global defaults
+@import 'variables'
+/* Global styles for work collection
+@import '../../_work'
+/* Site-wide Global Variables
+@import '../../../assets/_sass/0-utilities/global'
 
-/* Variables
-$brand-primary: #003D73
-$brand-secondary: gold
-$header-font: "Open Sans"
-$body-font: "Lato"
-
-h1
-    font-size: 56px
-
-h2
-    font-size: 42px
-    line-height: 57px
-h3
-    font-size: 28px
-
-h1, h2, h3, h4
-    font-family: $header-font
-    color: $brand-primary
-    margin: 0
-
-h1, h2
-    font-weight: 900
-
-p, li
-    font:
-        family: $body-font
-
-html
-    width: 1100px
-    // min-width: 1100px
-    // max-width: 2000px
-    margin: 0 auto
-
-/* set parent as flex
-.page-wrap
-    display: flex
-    flex-direction: column
-
-.column
-    flex: 1
-
-.section-content
-    display: flex
-p
-    text-align: justify
-    padding: 0 20px 0 0
 
 /* display protein tubs on top of profile image
 .hero
@@ -68,23 +26,30 @@ p
     justify-content: center
     height: 120px
     padding: 20px 15px
-    margin-bottom: 20px
     background-color: $brand-primary
     color: white
-    h1, h2
-        padding: em(20px) 0 em(25px)
     .project-name
         color: white
-        line-height: 0.6em
     .sub-heading
         color: $brand-secondary
-        line-height: 0.4em
         font-size: em(42px)
 
+.overview, .visual-design, .solution, .technology
+    margin-top: 5em
+    display: flex
+    flex-direction: column
 
+.overview, .visual-design, .technology
+    .section-header
+        margin-bottom: 1em
+.visual-design, .solution, .technology
+    .section-header
+        @extend .fancy-margin
+        align-self: center
 
 .overview
-    margin-bottom: 3em
+    .summary, .snl-logo, .brief
+        flex: 1
     .snl-logo
         margin: auto auto
         img
@@ -94,14 +59,13 @@ p
         margin: auto auto
 
 .solution
-    .section-header
-        text-align: center
     .section-content
         display: flex
         flex-direction: row
-        .insight, .branding
+        & > div
             align-self: center
             flex: 1
+            padding: 2em
     .alina-profile
         flex: 1
         img
@@ -109,14 +73,11 @@ p
             height: 549px
 
 .visual-design
-    display: flex
-    flex-direction: column
-    .section-header
-        align-self: center
     >p
         width: 37em
         align-self: center
         text-align: center
+    img
         margin: 3em 0
 
     .user-experience
@@ -127,6 +88,7 @@ p
             list-style: none
         .ux-summary
             flex: 1
+            align-self: center
         .ux-feature
             align-self: flex-end
             flex: 2
@@ -138,14 +100,12 @@ p
             .circle
                 background-color: $brand-primary
                 border-radius: 50%
-                color: white
-                height: 3em
-                min-width: 3.5em
+                color: $brand-secondary
+                height: 4em
+                width: 4.5em
                 padding: 2.5em 1em 0 1em
                 text-align: center
-
-
-.technology
-    .tech-feature
-
-.related-work
+                font:
+                    family: $header-font
+                    weigth: 900
+                    size: 1.3em
