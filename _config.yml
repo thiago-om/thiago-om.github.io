@@ -21,7 +21,7 @@ author:
   github:  thiagodebastos
 
 # general setting for Jekyll
-# googleAnalytics: UA-XXXXX-X
+googleAnalytics: UA-59976214-1
 
 collections:
   work:
