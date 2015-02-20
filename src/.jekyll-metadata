@@ -156,13 +156,13 @@
   mtime: 2015-02-17 18:20:28.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/assets/javascript/modernizr.js":
-  mtime: 2015-02-20 13:50:29.000000000 +00:00
+  mtime: 2015-02-20 14:13:33.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/assets/javascript/social-media.js":
   mtime: 2015-02-20 04:12:51.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/assets/stylesheets/style.css":
-  mtime: 2015-02-20 04:34:15.000000000 +00:00
+  mtime: 2015-02-20 14:12:01.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/crossdomain.xml":
   mtime: 2015-02-17 18:20:28.000000000 +00:00
@@ -243,5 +243,26 @@
   mtime: 2015-02-17 18:20:28.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_layouts/page.html":
+  mtime: 2015-02-17 18:20:28.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_includes/work-head.html":
+  mtime: 2015-02-20 02:19:35.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_includes/footer.html":
+  mtime: 2015-02-17 18:20:28.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_includes/masthead.html":
+  mtime: 2015-02-17 18:20:28.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/CNAME":
+  mtime: 2015-02-20 14:10:20.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_includes/work-related.html":
+  mtime: 2015-02-19 19:13:12.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_layouts/post.html":
+  mtime: 2015-02-17 18:20:28.000000000 +00:00
+  deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/_includes/coolform.html":
   mtime: 2015-02-17 18:20:28.000000000 +00:00
   deps: []
