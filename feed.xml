@@ -3,10 +3,10 @@
   <channel>
     <title>thiagodebastos</title>
     <description>This is where Thiago de Bastos keeps you connected to things he creates, thinks and feels. An Art directed blog.</description>
-    <link>thiagodebastos.github.io/</link>
-    <atom:link href="thiagodebastos.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 20 Feb 2015 17:41:11 +0000</pubDate>
-    <lastBuildDate>Fri, 20 Feb 2015 17:41:11 +0000</lastBuildDate>
+    <link>localhost:4000/</link>
+    <atom:link href="localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 20 Feb 2015 18:00:06 +0000</pubDate>
+    <lastBuildDate>Fri, 20 Feb 2015 18:00:06 +0000</lastBuildDate>
     <generator>Jekyll v3.0.0-beta1</generator>
     
       <item>
@@ -18,8 +18,8 @@
 &lt;p&gt;Bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque.&lt;/p&gt;
 </description>
         <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
-        <link>thiagodebastos.github.io/thought/2014/03/03/thoughts-04/</link>
-        <guid isPermaLink="true">thiagodebastos.github.io/thought/2014/03/03/thoughts-04/</guid>
+        <link>localhost:4000/thought/2014/03/03/thoughts-04/</link>
+        <guid isPermaLink="true">localhost:4000/thought/2014/03/03/thoughts-04/</guid>
         
         
         <category>thought</category>
@@ -35,8 +35,8 @@
 &lt;p&gt;Bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque.&lt;/p&gt;
 </description>
         <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
-        <link>thiagodebastos.github.io/thought/2014/03/03/thoughts-01/</link>
-        <guid isPermaLink="true">thiagodebastos.github.io/thought/2014/03/03/thoughts-01/</guid>
+        <link>localhost:4000/thought/2014/03/03/thoughts-01/</link>
+        <guid isPermaLink="true">localhost:4000/thought/2014/03/03/thoughts-01/</guid>
         
         
         <category>thought</category>
@@ -48,8 +48,8 @@
         <description>&lt;p&gt;stuff 2&lt;/p&gt;
 </description>
         <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
-        <link>thiagodebastos.github.io/creative/2014/03/03/this-is-the-year-of-creativity%202/</link>
-        <guid isPermaLink="true">thiagodebastos.github.io/creative/2014/03/03/this-is-the-year-of-creativity%202/</guid>
+        <link>localhost:4000/creative/2014/03/03/this-is-the-year-of-creativity%202/</link>
+        <guid isPermaLink="true">localhost:4000/creative/2014/03/03/this-is-the-year-of-creativity%202/</guid>
         
         
         <category>creative</category>
@@ -61,8 +61,8 @@
         <description>&lt;p&gt;stuff&lt;/p&gt;
 </description>
         <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
-        <link>thiagodebastos.github.io/creative/2014/03/03/this-is-the-year-of-creativity/</link>
-        <guid isPermaLink="true">thiagodebastos.github.io/creative/2014/03/03/this-is-the-year-of-creativity/</guid>
+        <link>localhost:4000/creative/2014/03/03/this-is-the-year-of-creativity/</link>
+        <guid isPermaLink="true">localhost:4000/creative/2014/03/03/this-is-the-year-of-creativity/</guid>
         
         
         <category>creative</category>
