@@ -35,7 +35,7 @@ gulp.task('styles', function () {
     //.pipe($.sourcemaps.init())
     .pipe($.sass({
       indentedSyntax: true, // Enable .sass syntax!
-      imagePath: 'assets/images', // Used by the image-url helper
+      imagePath: 'img', // Used by the image-url helper
       errLogToConsole: true}))
     //.pipe($.sourcemaps.write())
     .pipe($.autoprefixer({ browsers: ['last 1 version'] }))
