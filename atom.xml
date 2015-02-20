@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>thiagodebastos</title>
+ <link href="thiagodebastos.com/atom.xml" rel="self"/>
+ <link href="thiagodebastos.com/"/>
+ <updated>2015-02-20T17:22:46+00:00</updated>
+ <id>thiagodebastos.com</id>
+ <author>
+   <name>Thiago De Bastos</name>
+   <email>thiago@xingur.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Thoughts 01</title>
+   <link href="thiagodebastos.com/thought/2014/03/03/thoughts-04/"/>
+   <updated>2014-03-03T00:00:00+00:00</updated>
+   <id>thiagodebastos.com/thought/2014/03/03/thoughts-04</id>
+   <content type="html">&lt;p&gt;Vivamus Hendrerit Arcu Sed&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est.&lt;/p&gt;
+
+&lt;p&gt;Bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Thoughts 01</title>
+   <link href="thiagodebastos.com/thought/2014/03/03/thoughts-01/"/>
+   <updated>2014-03-03T00:00:00+00:00</updated>
+   <id>thiagodebastos.com/thought/2014/03/03/thoughts-01</id>
+   <content type="html">&lt;p&gt;Vivamus Hendrerit Arcu Sed&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est.&lt;/p&gt;
+
+&lt;p&gt;Bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>creative 01</title>
+   <link href="thiagodebastos.com/creative/2014/03/03/this-is-the-year-of-creativity%202/"/>
+   <updated>2014-03-03T00:00:00+00:00</updated>
+   <id>thiagodebastos.com/creative/2014/03/03/this-is-the-year-of-creativity 2</id>
+   <content type="html">&lt;p&gt;stuff 2&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Creative 01</title>
+   <link href="thiagodebastos.com/creative/2014/03/03/this-is-the-year-of-creativity/"/>
+   <updated>2014-03-03T00:00:00+00:00</updated>
+   <id>thiagodebastos.com/creative/2014/03/03/this-is-the-year-of-creativity</id>
+   <content type="html">&lt;p&gt;stuff&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
