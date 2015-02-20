@@ -65,6 +65,9 @@ app/_bower_components
 serve
 site
 
+# Jekyll Incremental build cache
+src/.jekyll-metadata
+
 # hide the AWS and Rsync credentials file
 aws-credentials.json
 rsync-credentials.json
