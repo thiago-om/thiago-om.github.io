@@ -20,8 +20,8 @@ author:
   twitter: thiagodebastos
   github:  thiagodebastos
 
-# general setting for Jekyll
-googleAnalytics: UA-59976214-1
+# general setting for Jekyll (disabled as using cloudflare)
+#googleAnalytics: UA-59976214-1
 
 collections:
   work:
