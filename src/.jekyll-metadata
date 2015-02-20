@@ -68,6 +68,9 @@
 "/Users/Thiago/Sites/thiagodebastos/src/sitemap.xml":
   mtime: 2015-02-17 18:20:28.000000000 +00:00
   deps: []
+"/Users/Thiago/Sites/thiagodebastos/src/CNAME":
+  mtime: 2015-02-20 14:10:20.000000000 +00:00
+  deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/README.md":
   mtime: 2015-02-17 18:20:28.000000000 +00:00
   deps: []
@@ -156,13 +159,13 @@
   mtime: 2015-02-17 18:20:28.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/assets/javascript/modernizr.js":
-  mtime: 2015-02-20 16:30:12.000000000 +00:00
+  mtime: 2015-02-20 17:22:46.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/assets/javascript/social-media.js":
   mtime: 2015-02-20 04:12:51.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/assets/stylesheets/style.css":
-  mtime: 2015-02-20 14:13:34.000000000 +00:00
+  mtime: 2015-02-20 17:21:15.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/crossdomain.xml":
   mtime: 2015-02-17 18:20:28.000000000 +00:00
@@ -174,7 +177,7 @@
   mtime: 2015-02-17 18:20:28.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_work/dawn-lister-therapy-centre/css/dawn-lister-therapy-centre.css":
-  mtime: 2015-02-20 04:19:41.000000000 +00:00
+  mtime: 2015-02-20 17:21:15.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_work/dawn-lister-therapy-centre/img/hero.png":
   mtime: 2015-02-20 00:26:17.000000000 +00:00
@@ -198,7 +201,7 @@
   mtime: 2015-02-20 00:58:02.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/css/solid-nutrition-london.css":
-  mtime: 2015-02-20 04:19:41.000000000 +00:00
+  mtime: 2015-02-20 17:21:15.000000000 +00:00
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_work/solid-nutrition-london/img/alina-profile.png":
   mtime: 2015-02-20 04:30:01.000000000 +00:00
@@ -235,46 +238,4 @@
   deps: []
 "/Users/Thiago/Sites/thiagodebastos/src/_work/work-assets/img/WP.png":
   mtime: 2015-02-18 10:05:42.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/work-meta.html":
-  mtime: 2015-02-20 04:18:42.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/head.html":
-  mtime: 2015-02-17 18:20:28.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_layouts/page.html":
-  mtime: 2015-02-17 18:20:28.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/work-head.html":
-  mtime: 2015-02-20 02:19:35.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/footer.html":
-  mtime: 2015-02-17 18:20:28.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/masthead.html":
-  mtime: 2015-02-17 18:20:28.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/CNAME":
-  mtime: 2015-02-20 14:10:20.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/work-related.html":
-  mtime: 2015-02-19 19:13:12.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_layouts/post.html":
-  mtime: 2015-02-17 18:20:28.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/coolform.html":
-  mtime: 2015-02-17 18:20:28.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/work-footer.html":
-  mtime: 2015-02-20 01:57:31.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_includes/scripts.html":
-  mtime: 2015-02-20 01:56:56.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_layouts/work.html":
-  mtime: 2015-02-20 03:49:14.000000000 +00:00
-  deps: []
-"/Users/Thiago/Sites/thiagodebastos/src/_layouts/default.html":
-  mtime: 2015-02-19 17:11:22.000000000 +00:00
   deps: []
