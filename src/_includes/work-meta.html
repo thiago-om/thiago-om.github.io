@@ -1,5 +1,20 @@
-<div class="work-meta">
-    <span class="post-date">Year {{ page.year }}</span>
-    <span class="tags">{{ page.tags }}</span>
-    <span class="social-share">like | tweet | google+</span>
+<div class="meta">
+    <div id="fb-root"></div>
+    <div class="meta__wrap">
+        <span class="meta--lead">Year</span><span class="meta--follow">{{ page.year }}</span>
+    </div>
+    <div class="meta__wrap">
+        <span class="meta--lead">tags:</span><span class="meta--follow">{% for tag in page.tags %}<span>{{ tag }}</span>{% endfor %}</span>
+    </div>
+
+    <div class="meta__wrap social">
+        <!-- fb like -->
+        <div class="fb-like" data-href="{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+        <!-- tweet -->
+        <div class="tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out this Creative Journey by Thiago de Bastos!" data-via="thiagodebastos" data-size="medium" data-hashtags="creativejourney">Tweet</a></div>
+        <!-- google +1 -->
+        <div class="gplus">
+            <div class="g-plusone"></div>
+        </div>
+    </div>
 </div>
