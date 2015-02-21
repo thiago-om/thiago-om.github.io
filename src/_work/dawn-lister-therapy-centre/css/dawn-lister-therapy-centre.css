@@ -372,8 +372,9 @@ p, li, span {
   color: #420F20; }
 
 .meta--follow {
-  background: #F3B9AA;
-  color: #420F20; }
+  background: #F3B9AA; }
+  .meta--followspan {
+    color: #420F20; }
   .meta--follow span:after {
     content: ' • ';
     opacity: 0.5; }
