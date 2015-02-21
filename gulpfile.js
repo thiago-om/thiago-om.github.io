@@ -179,7 +179,7 @@ gulp.task('serve:dev', ['styles', 'styles:work', 'jekyll:dev'], function () {
 gulp.task("watch", function () {
   gulp.watch(['src/**/*.{md,html,xml,txt,js}'], ['jekyll-rebuild']);
   gulp.watch(['serve/**/*.{md,html,xml,txt,js}'], reload);
-  gulp.watch('serve/assets/stylesheets/*.css', reload);
+
   gulp.watch(['src/assets/_sass/**/*.{scss,sass}'], ['styles']);
   gulp.watch('src/assets/images/**', ['images'], reload);
   // watch for changes in work collection
