@@ -8,9 +8,9 @@
     <!-- DNS prefetch -->
     <link rel="dns-prefetch" href="//ajax.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    {% unless site.googleAnalytics == '' %}
+    {% if site.googleAnalytics %}
         <link rel="dns-prefetch" href="//www.google-analytics.com">
-    {% endunless %}
+    {% if %}
     <!-- as per David Walsh: http://davidwalsh.name/msapplication-task -->
     <meta name="application-name" content="{{ site.name}}">
     <meta name="msapplication-tooltip" content="{{ site.tagline }}">
