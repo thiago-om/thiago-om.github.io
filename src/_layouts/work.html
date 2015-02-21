@@ -9,6 +9,10 @@ layout: work
         {{ content }}
     </div>
     {% include work-related.html %}
+
+    {% unless site.googleAnalytics == '' %}
+        {% include analytics.html %}
+    {% endunless %}
     <!-- build:js /assets/javascript/work.min.js-->
     <script src="/assets/javascript/social-media.js"></script>
     <!-- endbuild-->

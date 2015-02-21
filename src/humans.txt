@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Thiago de Bastos -- <role> -- @@thiagodebastos
+    Thiago de Bastos -- <role> -- @thiagodebastos
 
 # THANKS
 
