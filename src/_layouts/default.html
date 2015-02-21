@@ -15,9 +15,9 @@ layout: default
         {% include coolform.html %}
     </div> <!-- .page-wrap -->
 
-    {% unless site.googleAnalytics == '' %}
+    {% if site.googleAnalytics %}
         {% include analytics.html %}
-    {% endunless %}
+    {% endif %}
 
     {% include scripts.html %}
 </body>
