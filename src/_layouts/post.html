@@ -16,6 +16,9 @@ layout: post
             </li>{% endfor %}
         </ul>
     </div>
+    {% if site.googleAnalytics %}
+        {% include analytics.html %}
+    {% endif %}
 </body>
 
 {% include post-footer.html %}
