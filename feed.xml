@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>thiagodebastos</title>
+    <description>This is where Thiago de Bastos keeps you connected to things he creates, thinks and feels. An Art directed blog.</description>
+    <link>http://thiagodebastos.com/</link>
+    <atom:link href="http://thiagodebastos.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 21 Feb 2015 00:57:38 +0000</pubDate>
+    <lastBuildDate>Sat, 21 Feb 2015 00:57:38 +0000</lastBuildDate>
+    <generator>Jekyll v3.0.0-beta1</generator>
+    
+      <item>
+        <title>Thoughts 01</title>
+        <description>&lt;p&gt;Vivamus Hendrerit Arcu Sed&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est.&lt;/p&gt;
+
+&lt;p&gt;Bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
+        <link>http://thiagodebastos.com/thought/2014/03/03/thoughts-04/</link>
+        <guid isPermaLink="true">http://thiagodebastos.com/thought/2014/03/03/thoughts-04/</guid>
+        
+        
+        <category>thought</category>
+        
+      </item>
+    
+      <item>
+        <title>Thoughts 01</title>
+        <description>&lt;p&gt;Vivamus Hendrerit Arcu Sed&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est.&lt;/p&gt;
+
+&lt;p&gt;Bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
+        <link>http://thiagodebastos.com/thought/2014/03/03/thoughts-01/</link>
+        <guid isPermaLink="true">http://thiagodebastos.com/thought/2014/03/03/thoughts-01/</guid>
+        
+        
+        <category>thought</category>
+        
+      </item>
+    
+      <item>
+        <title>creative 01</title>
+        <description>&lt;p&gt;stuff 2&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
+        <link>http://thiagodebastos.com/creative/2014/03/03/this-is-the-year-of-creativity%202/</link>
+        <guid isPermaLink="true">http://thiagodebastos.com/creative/2014/03/03/this-is-the-year-of-creativity%202/</guid>
+        
+        
+        <category>creative</category>
+        
+      </item>
+    
+      <item>
+        <title>Creative 01</title>
+        <description>&lt;p&gt;stuff&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
+        <link>http://thiagodebastos.com/creative/2014/03/03/this-is-the-year-of-creativity/</link>
+        <guid isPermaLink="true">http://thiagodebastos.com/creative/2014/03/03/this-is-the-year-of-creativity/</guid>
+        
+        
+        <category>creative</category>
+        
+      </item>
+    
+  </channel>
+</rss>
