@@ -372,8 +372,9 @@ p, li, span {
   color: gold; }
 
 .meta--follow {
-  background: gold;
-  color: #003D73; }
+  background: gold; }
+  .meta--followspan {
+    color: #003D73; }
   .meta--follow span:after {
     content: ' • ';
     opacity: 0.5; }
