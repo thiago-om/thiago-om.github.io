@@ -3,12 +3,12 @@ layout: work
 ---
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en_uk">
-{% include work-head.html %}
+{% include work/head.html %}
 <body>
     <div class="work">
         {{ content }}
     </div>
-    {% include work-related.html %}
+    {% include work/related.html %}
 
     {% unless site.googleAnalytics == '' %}
         {% include analytics.html %}
@@ -19,5 +19,5 @@ layout: work
     <!-- social media scripts -->
     {% include scripts/twitter.html %}
 </body>
-{% include work-footer.html %}
+{% include work/footer.html %}
 </html>
