@@ -1,5 +1,5 @@
 # Run during the 'gulp build' command
-# Overrides these options in _config.yml
+# Overrides options in _config.yml
 
 # Overrides the default URL, needed for your atom feed and sitemap
 url: http://thiagodebastos.com
@@ -11,6 +11,9 @@ show_drafts: false
 #lsi: true
 # Removes the upper limit for posts generated
 limit_posts: 0
+
+# Set development envoronment to production
+environment: production
 
 source: src
 destination: serve
