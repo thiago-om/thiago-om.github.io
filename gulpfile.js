@@ -29,7 +29,7 @@ gulp.task("jekyll-rebuild", ["jekyll:dev"], function () {
 gulp.task("jekyll:prod", $.shell.task("jekyll build --config _config.yml,_config.build.yml"));
 
 // Compiles the SASS files and moves them into the "assets/stylesheets" directory
-
+// Have not been able to have sourcemaps work yet
 gulp.task('styles', function () {
   return gulp.src('src/assets/_sass/style.sass')
     //.pipe($.sourcemaps.init())
@@ -44,7 +44,7 @@ gulp.task('styles', function () {
     .pipe(reload({stream:true}));
 });
 
-// Styles for collections
+// Compile SASS for the 'work' collection. Change work to whichever collection you set up to use
 gulp.task('styles:work', function () {
   return gulp.src('src/_work/**/*.sass')
     //.pipe($.sourcemaps.init())
