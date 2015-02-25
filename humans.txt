@@ -5,10 +5,6 @@
 
     Thiago de Bastos -- <role> -- @thiagodebastos
 
-# THANKS
-
-    <name>
-
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3, JavaScript
