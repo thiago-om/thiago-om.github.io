@@ -1,0 +1,15 @@
+// ==========================================================================
+// $FONT-FACE
+// ==========================================================================
+if variable-exists(google-fonts-url)
+  @import url($google-fonts-url)
+if variable-exists(fonts)
+  for $font-face in $fonts
+    @font-face
+      font-family: $font-face
+      src: url("/assets/fonts/{$font-face}.eot")
+      // IE9 Compat Modes
+      src: url("/assets/fonts/{$font-face}.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/{$font-face}.woff") format("woff"), url("/assets/fonts/{$font-face}.ttf") format("truetype"), url("/assets/fonts/{$font-face}.svg#{$font-face}") format("svg")
+      // Legacy iOS
+      font-style: normal
+      font-weight: normal

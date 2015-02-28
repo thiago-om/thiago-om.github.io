@@ -1,0 +1,177 @@
+// TODO: add global reset
+
+// Variables
+$header-font ?= "Open Sans"
+$body-font ?= "Lato"
+
+$brand-primary ?= black
+$brand-secondary ?= grey
+
+$border-color ?= $brand-primary
+
+$meta-bg-primary ?= $brand-primary
+$meta-bg-secondary ?= $brand-secondary
+
+html
+	width: 1100px
+	margin: 0 auto
+	-webkit-font-smoothing: subpixel-antialiased
+
+// typography
+h1
+	font-size: 56px
+
+h2
+	font-size: 42px
+	line-height: 57px
+h3
+	font-size: 28px
+
+h1, h2, h3, h4
+	font-family: $header-font
+	font-color: $brand-primary
+	margin: 0
+
+h1, h2
+	font-weight: 800
+
+p, li, span
+	font-family: $body-font
+
+//// meta information
+.meta
+	font-size: 12px
+	padding: 20px 0
+	margin-top: 0
+.meta__wrap
+	padding: 0 5px 0 0
+.meta__wrap > span
+	padding: 5px
+	vertical-align: middle
+	position: relative
+.meta > div
+	display: inline
+	text-transform: uppercase
+.meta--lead
+	background: $meta-lead-bg
+	color: $meta-lead-color
+.meta--follow
+	background: $meta-follow-bg
+	&span
+		color: $meta-follow-color
+	span:after
+		content: ' • '
+		opacity: 0.5
+
+	span:last-of-type:after
+		content:''
+.social > div
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	padding: 0 7px
+.tweet
+	margin-bottom: -3px
+	width: 77px
+.gplus
+	margin-bottom: -3px
+
+
+
+// set parent as flex
+.page-wrap
+	display: flex
+	flex-direction: column
+	overflow: hidden
+
+.section-content
+	display: flex
+p
+	text-align: justify
+	padding: 0 20px 0 0
+
+// fancy margins
+.fancy-margin
+	display: inline-block
+	position: relative
+	text-align: center
+	padding: 0 .5em
+	span
+		position: relative
+	&:before,
+	&:after
+		content: ""
+		position: absolute
+		width: 200%
+		border-top: 2px solid $border-color
+		top: 50%
+	&:after
+		left: 100%
+	&:before
+		right: 100%
+
+// set sections as flex items
+.overview, .visual-design, .solution, .technology, .creative
+	margin-top: 5em
+	display: flex
+	flex-direction: column
+
+.overview, .visual-design, .technology, .creative
+	.section-header
+		margin-bottom: 1em
+.visual-design, .solution, .technology, .creative
+	.section-header
+		@extend .fancy-margin
+		align-self: center
+
+// techonology section
+.technology
+	margin-top: 80px
+	.tech-logos, .tech-copy
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: center
+		text-align: center
+		& > *
+			flex: 1
+	.tech-logos
+		margin: 3em 0
+	.tech-copy p
+		padding: 2em
+
+.related
+	@extend .page-wrap
+	margin-top: 4em
+	h2.section-header
+		@extend .fancy-margin
+		align-self: center
+	.portfolio-grid
+		display: flex
+		flex-direction: row
+		text-align: center
+		margin-top: 4em
+		li
+			flex: 1
+			list-style: none
+			img
+				transition: filter 0.6s ease
+			img:hover
+				filter: grayscale(100%)
+
+.portfolio-footer
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: flex-end
+	border-top: 2px solid $border-color
+	margin-top:4em
+	padding: 2em 0
+
+	.footer__block
+		flex: 1
+		padding: 1em
+	.footer__block--title
+		display: block
+	.footer__block--contact
+		font-weight: 800

@@ -1,0 +1,33 @@
+---
+date: 2014-01-15
+title: JSON Test
+description: Creative journey and case study for the Dawn Lister Therapy Centre website.
+category: portfolio
+tags: [webdesign]
+relatedimageurl: http://lorempixel.com/325/250/abstract/1
+googlewebfonts: Lato|Open+Sans:400,700,800
+_content: false
+---
+extends /_templates/single-thought
+append config
+	-var jQuery = true
+	-var PullDown = false
+
+append content
+	// check if jQuery is loaded
+	h3#gotJquery Nope, no jQuery :(
+	br
+
+	button(onclick="myFunction()") Inject JSON Data
+	h3#demo
+
+	code#demo2
+
+	append siteJS
+		script.
+			if (window.jQuery) {
+				$('#gotJquery').html("jQuery has been loaded!");
+				}
+		
+
+

@@ -1,0 +1,9 @@
+extends /_templates/default
+append config
+	-var jQuery = true
+	-var PullDown = false
+
+
+block footer
+	include /_includes/portfolio/footer
+	a(href='/') &laquo; back to home

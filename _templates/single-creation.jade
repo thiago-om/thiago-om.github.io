@@ -1,0 +1,15 @@
+doctype html
+html
+	head
+		title= _path.match(/[-a-zA-Z0-9@:%_\+]{4,256}(?=\.[html|php])/g)
+
+		!= css('/')
+
+	body
+
+		h2= post.title
+		
+		block content
+
+		a(href='/') &laquo; back to index
+		!= js('/')

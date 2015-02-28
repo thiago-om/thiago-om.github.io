@@ -1,0 +1,13 @@
+extends /_templates/default
+
+append config
+	- var jQuery = false
+	- var PullDown = false
+	- var PageTitle = '404: are you lost?'
+
+block content
+	.page
+		h1.page-title 404: Page not found
+		p.lead
+			| Sorry, we"ve misplaced that URL or it"s pointing to something that doesn"t exist. 
+			a(href="/") Head back home try finding it again :)
