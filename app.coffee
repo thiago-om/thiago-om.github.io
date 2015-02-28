@@ -34,6 +34,7 @@ module.exports =
 			description: 'This is where Thiago de Bastos keeps you connected to things he creates, thinks and feels. An Art directed blog'
 			author:
 				name: 'Thiago de Bastos'
+				email: 'thiago@thiagodebastos.com'
 				github: 'thiagodebastos'
 				twitter: 'thiagodebastos'
 				facebook: 'thiago.davoodifar'
