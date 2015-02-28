@@ -1,0 +1,12 @@
+- var $ThisPost = post._url;
+.related
+	h2.section-header Related Work.
+	ul.portfolio-grid
+		each post in site.portfolio.all()
+			unless post._url == $ThisPost
+				li
+					a(href= post._url)
+						if post.relatedimageurl
+							img(src= post.relatedimageurl)
+						else
+							img(src= 'http://placehold.it/425x250&text=' + post.title)

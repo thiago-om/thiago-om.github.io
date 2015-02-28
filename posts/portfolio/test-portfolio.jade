@@ -1,0 +1,19 @@
+---
+date: 2014-01-15
+title: test portfolio
+description: Creative journey and case study for the Dawn Lister Therapy Centre website.
+category: portfolio
+tags: [webdesign]
+relatedimageurl: http://lorempixel.com/325/250/abstract/1
+googlewebfonts: Lato|Open+Sans:400,700,800
+_content: false
+---
+
+extends /_templates/single-portfolio
+block styles
+	script(type="text/javascript" src="/content.json")
+	script(script type="text/javascript" src="/assets/js/main.js")
+block content
+		.onLoad(onload="load()")
+		h1  askyb - Load JSON File Locally by Javascript Without JQuery
+		//- h1= post._categories[post._categories.length - 1]

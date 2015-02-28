@@ -1,0 +1,31 @@
+extends /_templates/default
+
+append config
+  - var jQuery = true
+  - var PageTitle = 'Home'
+  - var PullDown = true
+
+block content
+  .loop-wrap
+    .masonry
+      each post in site.posts.all()
+        if site.posts.all(category)
+          unless post.title === undefined
+            a(href=post._url class='masonry__brick category--' + post.category)
+              h2.masonry__brick--title: = post.title
+              p= post.category
+              em.masonry__brick--date: = post.date.toDateString()
+              img.masonry__brick--cover
+
+      each post in site.portfolio.all()
+        a(href=post._url class='masonry__brick category--' + post.category)
+          h2.masonry__brick--title: = post.title
+          p= post.category
+          em.masonry__brick--date: = post.date.getFullYear()
+          img.masonry__brick--cover
+
+  append vendorJS
+    script(src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/masonry.pkgd.min.js")
+
+  append siteJS
+    script(src="/assets/js/custom/masonry-filter.js")

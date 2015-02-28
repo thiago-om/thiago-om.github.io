@@ -1,0 +1,34 @@
+block config
+	include /_includes/config
+
+doctype
+html( xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" )
+	
+	include /_includes/head
+	block styles
+		!= css('/')
+
+	body
+		if PullDown 
+			input#pulldowntoggler(type="checkbox")
+		.page-wrap
+			.page-content
+				if PullDown
+					include /_includes/masthead
+
+				block content
+
+				if PullDown
+					include /_includes/coolform
+
+		block vendorJS
+			if jQuery
+				script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+
+		block siteJS
+			!= js('/')
+	
+	footer
+		block footer
+			code#gotJquery Nope, no jQuery :(
+			p this is the footer

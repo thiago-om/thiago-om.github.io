@@ -1,0 +1,21 @@
+extends /_templates/default
+append config
+	-var jQuery = true
+	-var PullDown = false
+
+block styles
+	link(rel="stylesheet" href= '/portfolio/portfolio-assets/' + PageSlug + '/css/' + PageSlug + '.css')
+
+block content
+	block creative-journey
+	include /_includes/portfolio/related
+
+append siteJS
+	//- define social scripts in app.coffee (ef scripts: social)
+	//- check twitter script
+	script
+		include /assets/js/custom/social-media.js
+
+block footer
+	include /_includes/portfolio/footer
+	a(href='/') &laquo; back to home
