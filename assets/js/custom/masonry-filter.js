@@ -9,28 +9,28 @@ $(document).ready(function ($) {
 
 	var arrThought = new Array($('.category--thoughts'));
 	var arrCreative = new Array($('.category--creations'));
-	var arrWork = new Array($('.category--portfolio'));
+	var arrPortfolio = new Array($('.category--portfolio'));
 
 	$('input').click(function () {
 
 
 		if ($('.thought-filter').is(':checked')) {
-			$container.masonry('hide', arrCreative.concat(arrWork));
+			$container.masonry('hide', arrCreative.concat(arrPortfolio));
 			$(arrThought).each(function (index, element) {
 				element.show();
 			});
 			$container.masonry();
 
 		} else if ($('.creative-filter').is(':checked')) {
-				$container.masonry('hide', arrWork.concat(arrThought));
+				$container.masonry('hide', arrPortfolio.concat(arrThought));
 				$(arrCreative).each(function (index, element) {
 					element.show();
 				});
 				$container.masonry();
 
-		} else if ($('.work-filter').is(':checked')) {
+		} else if ($('.portfolio-filter').is(':checked')) {
 				$container.masonry('hide', arrCreative.concat(arrThought));
-				$(arrWork).each(function (index, element) {
+				$(arrPortfolio).each(function (index, element) {
 					element.show();
 				});
 				$container.masonry();
@@ -42,7 +42,7 @@ $(document).ready(function ($) {
 				$(arrCreative).each(function (index, element) {
 					element.show();
 				});
-				$(arrWork).each(function (index, element) {
+				$(arrPortfolio).each(function (index, element) {
 					element.show();
 				});
 				$container.masonry();
