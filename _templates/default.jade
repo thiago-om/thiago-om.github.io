@@ -9,16 +9,16 @@ html( xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" )
 		!= css('/')
 
 	body
-		if PullDown 
+		if pullDown 
 			input#pulldowntoggler(type="checkbox")
 		.page-wrap
 			.page-content
-				if PullDown
-					include /_includes/masthead
+				if pullDown
+					include /_includes/site-header
 
 				block content
 
-				if PullDown
+				if pullDown
 					include /_includes/coolform
 
 		block vendorJS
