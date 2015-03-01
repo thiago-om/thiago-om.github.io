@@ -1,0 +1,22 @@
+header.masthead__wrap
+	div(class='masthead--#{PageTheme}')
+		.thiago-logo
+			h3
+				| thiago
+				span debastos
+		nav.links
+			ul.toggle
+				li
+					label#navtoggler(for="pulldowntoggler") sayhello.
+		.social-icons
+			div
+				a.icon-behance(href="http://www.behance.net/" + locals.author.behance)
+			div
+				//- TODO: change google url when receive custom page url
+				a.icon-google-plus(href="https://plus.google.com/u/0/111994372583076987913/")
+			div
+				a.icon-facebook(href="https://www.facebook.com/" + locals.author.facebook)
+			div
+				a.icon-twitter(href="https://www.twitter.com/" + locals.author.twitter)
+			div
+				a.icon-github(href="https://github.com/" + locals.author.github)
