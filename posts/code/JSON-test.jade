@@ -6,7 +6,6 @@ category: portfolio
 tags: [webdesign]
 relatedimageurl: http://lorempixel.com/325/250/abstract/1
 googlewebfonts: Lato|Open+Sans:400,700,800
-_content: false
 ---
 extends /_templates/single-thought
 append config
@@ -24,6 +23,7 @@ append content
 	code#demo2
 
 	append siteJS
+		script(src='/assets/js/custom/json-test.js')
 		script.
 			if (window.jQuery) {
 				$('#gotJquery').html("jQuery has been loaded!");
