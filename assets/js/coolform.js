@@ -1,19 +1,19 @@
 $(function(){
 
-	$('.coolform.input-group input').focusout(function(){
+  $('.coolform .input-group input').focusout(function(){
 
-		var text_val = $(this).val();
+	var text_val = $(this).val();
 
-		if(text_val === "") {
+	if(text_val === "") {
 
-			$(this).removeClass('has-value');
+	  $(this).removeClass('has-value');
 
-		} else {
+	} else {
 
-			$(this).addClass('has-value');
+	  $(this).addClass('has-value');
 
-		}
+	}
 
-	});
+  });
 
 });

@@ -3,7 +3,12 @@ $(document).ready( function() {
 	// init Isotope
 	var $container = $('.isotope').isotope({
 		itemSelector: '.isotope__element',
-		layoutMode: 'fitRows',
+		layoutMode: 'masonry',
+		masonry: {
+			// TODO: set when page grid is set up
+			// columnWidth: '.page-content'
+			gutter: 20
+		},
 		getSortData: {
 					date: '.isotope__element--date date.substring',
 					category: '[data-category]'
