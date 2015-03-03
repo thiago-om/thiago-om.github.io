@@ -1,64 +1,56 @@
-.button
-	display inline-block
-	padding 0.5em 1.0em
-	background #EEE
-	border none
-	border-radius 7px
-	background-image linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) )
-	color #222
-	font-family sans-serif
-	font-size 16px
-	text-shadow 0 1px white
-	cursor pointer
-	&:hover
-		background-color #8CF
-		text-shadow 0 1px hsla(0, 0%, 100%, 0.5)
-		color #222
-	&.is-checked
-		color white
-		text-shadow 0 -1px hsla(0, 0%, 0%, 0.8)
-	&:active
-		box-shadow inset 0 1px 10px hsla(0, 0%, 0%, 0.8)
-
-.button:active,
-.button.is-checked
-	background-color #28F
-
-.button-group
-	&:after
-		content ''
-		display block
-		clear both
-	.button
-		float left
-		border-radius 0
-		margin-left 0
-		margin-right 1px
-		&:first-child
-			border-radius 0.5em 0 0 0.5em
-		&:last-child
-			border-radius 0 0.5em 0.5em 0
-
-
-	&.thoughts
-		background #F80
-		background hsl(  36, 100%, 50%)
-	&.creations
-		background #F08
-		background hsl( 324, 100%, 50%)
-	&.code
-		background #0FF
-		background hsl( 180, 100%, 50%)
-	&.portfolio
-		background #0F0
-		background hsl( 108, 100%, 50%)
-
-.category--thoughts
-	width: (245/1.5)px
-	height: (660/1.5)px
-.category--creations
-	width: (245/1.5)px
-	height: (660/1.5)px
-.category--portfolio
-	width: (505/1.5)px
-	height: (245/1.5)px
+/*** Transitions *** */
+// .isotope__element--cover
+// 	transition-duration: 0.075s
+// 	transition-property: all
+// 	transition-property: left, right, top
+.isotope
+	margin: 0 auto
+	font-size: 1rem
+	&__element
+		display: inline-block
+		margin-bottom: 20px
+		font-size: 0.58em
+		line-height: 0.5em
+		background: white
+		position: relative
+		overflow: hidden
+		text-decoration: none
+		color: black
+		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.7)
+		border: 3px solid white
+		h2, em
+			position: absolute
+			bottom: 10px
+			padding: 0 6px
+		h2
+			color: #555555
+			font-family: $helvetica
+		em
+			color: #777777
+			font-family: $georgia
+			font-style: normal
+		&--cover
+			min-width: 100%
+			height: 100%
+			position: absolute
+			top: 0px
+			left: 0px
+			transition: all, 0.075s, linear
+		&:hover
+			.isotope__element--cover
+				top: -1*40px
+				border-bottom: 3px solid $color-primary
+	// sizes
+	$hwratio = 0.350777935
+	.category--thoughts
+		width: 230px
+		height: 440px
+	.category--creations
+		width: 230px
+		height: 440px
+	.category--code
+		width: 230px
+		height: 440px
+	.category--portfolio
+		width: 230px
+		height: 440px

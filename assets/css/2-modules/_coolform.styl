@@ -6,17 +6,21 @@
 		padding: 15px 40px
 		font-size: 18px
 		display: inline-block
+
 		&:focus,
 		&:active
 			outline: none
-		&[type="text"],
+
+		&[type="text"]
 		&[type="email"]
 			border: none
 			border-bottom: solid 4px $color-primary
+
 		&[type="submit"]
 			&:active
 				color: white
-				background: $color-primary
+				background: lime
+
 	.input-group
 		display: inline-block
 		margin-right: 20px
@@ -24,7 +28,6 @@
 		input
 			padding: 15px 0px
 		label
-			// TODO: @bourbon
 			position: absolute
 			top: 50%
 			left: 0px
@@ -35,8 +38,7 @@
 			font-weight: 300
 			color: #999999
 			pointer-events: none
-			// TODO: @bourbon
-			transition: all, .5s, linear
+			transition: all, .3s, linear
 		input:focus + label,
 		input.has-value + label
 			top: -1*10px

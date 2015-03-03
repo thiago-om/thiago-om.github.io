@@ -1,8 +1,9 @@
 //Main Stylus file
-@import '_settings'
 normalize-css()
+@import '_settings'
+@import 'jeet'
 base()
-// @import 'jeet'
+@import 'axis'
 
 // Utilities
 @import '0-utilities/_utilities-dir'
@@ -13,3 +14,14 @@ base()
 // Layouts
 @import '3-layouts/_layouts-dir'
 // States
+
+// New Atomic Design Model
+// Quarks
+// @import '01-quarks/'
+// Atoms
+@import '02-atoms/_buttons'
+// Molecules
+@import '03-molecules/_button-group'
+// Organisms
+// Templates
+// Pages

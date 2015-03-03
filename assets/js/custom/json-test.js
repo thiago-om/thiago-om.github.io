@@ -34,3 +34,27 @@ $.getJSON('/content.json', function(data) {
 		document.getElementById("demo2").innerHTML = text;
 		document.getElementById("jsonItem").innerHTML = text;
 });
+
+$.getJSON('/content.json', function(data) {
+		var i = 0;
+		var $items = data.posts[i];
+		while (i < data.posts.length){
+			var text = "";
+			var i2 = 0;
+			var $posts = data.posts.code.items[i];
+			while (i2 < data.posts.code.items.length) {
+					text +=
+					"<h3> posts "                        + [i2+1] + " at key [" + [i2] + "]</h3>" +
+					"<br> <strong>Title</strong>: "      + $posts.title +
+					"<br> <strong>Description</strong>: "+ $posts.description +
+					"<br> <strong>Category</strong>: "   + $posts.category +
+					"<br> <strong>Url</strong>: "        + $posts._url +
+					"<br> <strong>Tags</strong>: "       + $posts.tags + '<hr>';
+					i2++;
+				document.getElementById("demo3").innerHTML = text;
+				document.getElementById("jsonItem").innerHTML = text;
+			}
+			i2++;
+
+		}
+});

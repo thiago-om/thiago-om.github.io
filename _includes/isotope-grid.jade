@@ -1,27 +1,17 @@
-#filters.button-group
-	button.button.is-checked(data-filter="*") show all
-	button.button(data-filter=".thoughts") thoughts
-	button.button(data-filter=".creations") creations
-	button.button(data-filter=".code") code
-	button.button(data-filter=".portfolio") portfolio
-#sorts.button-group
-	button.button(data-sort-by="date" data-sort-ascending="false") date
-	button.button(data-sort-by="category") category
-	button.button(data-sort-by="original-order") reset
-
 .isotope
 	each post in site.posts.all()
 		if site.posts.all(category)
 			unless post.title === undefined
-				a(data-category= post.category class= post.category href= post._url class='element-item transition isotope__element category--' + post.category)
+				a(data-category= post.category href= post._url class='element-item transition isotope__element #{post.category} category--' + post.category)
 					h2.isotope__element--title= post.title
-					p= post.category
-					em.isotope__element--date= post.date
-					img.isotope__element--cover
+					//- p= post.category
+					em.isotope__element--date= post.date.toDateString()
+					.isotope__element--cover(style='background: url(#{post.coverImage}) no-repeat top left; background-size: cover; background-color: white')
 
 	each post in site.portfolio.all()
-		a.element-item.transition(data-category= post.category class='element-item transition isotope__element category--' + post.category)
-			h2.isotope__element--title= post.title
-			p= post.category
-			em.isotope__element--date= post.date.getFullYear()
-			img.isotope__element--cover
+		div(class='element-item transition isotope__element #{post.category} category--' + post.category)
+			a(data-category= post.category href= post._url)
+				h2.isotope__element--title= post.title
+				//- p= post.category
+				em.isotope__element--date= post.date.getFullYear()
+				.isotope__element--cover(style='background: url(#{post.coverImg}) no-repeat top left; background-size: cover; background-color: white')

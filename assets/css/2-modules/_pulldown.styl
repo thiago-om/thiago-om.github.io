@@ -1,1 +1,41 @@
+.page-content
+	transition all 0.2s linear
 
+.slide-down-content
+	// slide-out topbar off-canvas
+	background-color: whitesmoke
+	position: fixed
+	top: -460px
+	// left: 0px
+	// down: 0px
+	color: black
+	z-index: 1
+	height: 370px
+	width: 100%
+	padding: 30px
+	text-align: center
+	transition: all, .3s, linear
+
+	p.blurb
+		font-family: 'Lato', sans-serif
+		font-weight: 300
+		font-size: 2rem
+		display: inline-block
+		color: black
+		list-style-type: none
+		span
+			font-weight: 900
+	.coolform
+		padding-top: 50px
+
+
+#pulldowntoggler
+	display: none
+	&:checked + .page-wrap
+		.slide-down-content
+			top: 0px
+		.site-header
+			top: 490px
+			border-top: 2px solid $color-primary
+		.page-content
+			padding-top: 400px
