@@ -8,13 +8,14 @@ dynamic_content = require 'dynamic-content'
 yaml = require 'roots-yaml'
 
 module.exports =
-	ignores: ['readme.md', '_templates/**/*', '**/_*', '_includes/**/*', '.gitignore', '.editorconfig', 'ship.*conf']
+	ignores: ['readme.md', '_templates/**/*', '**/_*', '_templates/**/*', '.gitignore', '.editorconfig', 'ship.*conf']
 
 	dump_dirs: ['']
 
 
 	extensions: [
-		dynamic_content()
+		yaml(),
+		dynamic_content(write: {'data/posts.json': 'posts', 'data/portfolio.json': 'portfolio'}),
 		js_pipeline(files: 'assets/js/*.coffee', out: 'js/build.js', minify: true, hash: true),
 		css_pipeline(files: 'assets/css/*.styl', out: 'css/build.css', minify: true, hash: true),
 	]
