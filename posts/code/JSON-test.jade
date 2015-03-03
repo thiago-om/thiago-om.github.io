@@ -7,21 +7,25 @@ tags: [webdesign]
 relatedimageurl: http://lorempixel.com/325/250/abstract/1
 googlewebfonts: Lato|Open+Sans:400,700,800
 height: 125px
+_content: false
 ---
-extends /_templates/single-thought
+extends /_layouts/single-thought
 append config
 	-var jQuery = true
-	-var PullDown = false
 
 append content
 	// check if jQuery is loaded
 	h3#gotJquery Nope, no jQuery :(
 	br
 
+
 	button(onclick="myFunction()") Inject JSON Data
 	h3#demo
 	code#demo2
 	code#demo3
+	code#jsonItem
+
+	code.test
 
 	append siteJS
 		script(src='/assets/js/custom/json-test.js')
@@ -29,6 +33,5 @@ append content
 			if (window.jQuery) {
 				$('#gotJquery').html("jQuery has been loaded!");
 				}
-		
-
+	//- code= JSON.stringify(records.portfolio.items[0].title)
 

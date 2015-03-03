@@ -1,4 +1,4 @@
-extends /_templates/default
+extends /_layouts/default
 
 append config
 	- var jQuery = true
@@ -8,8 +8,8 @@ append config
 	- var isotopeGrid = true
 
 block content
-	include _includes/isotope-grid
-						
+	include _templates/isotope-grid
+
 	append vendorJS
 		if locals.config.node_env == "production"
 			script(src='//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.1/isotope.pkgd.min.js')
