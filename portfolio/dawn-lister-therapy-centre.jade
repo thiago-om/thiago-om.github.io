@@ -4,11 +4,12 @@ title: Dawn Lister Therapy Centre.
 description: Creative journey and case study for the Dawn Lister Therapy Centre website.
 category: portfolio
 tags: [webdesign]
-relatedimageurl:
+relatedimageurl: portfolio-assets/dawn-lister-therapy-centre/img/logo.png
 coverImg: /portfolio/portfolio-assets/dawn-lister-therapy-centre/img/logo.png
 googlewebfonts: Lato|Open+Sans:400,700,800
+_content: false
 ---
-extends /_templates/single-portfolio
+extends /_layouts/single-portfolio
 append config
 	-var PageTitle= 'Dawn Lister Website'
 
@@ -20,7 +21,7 @@ block creative-journey
 		if post.tagline
 			h3.sub-heading= post.tagline
 		// @TODO: (5) [convert to mixin]
-	include /_includes/portfolio/meta
+	include /_templates/portfolio/meta
 	.overview
 		h2.section-header Summary.
 		.section-content

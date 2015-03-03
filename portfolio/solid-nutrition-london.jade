@@ -6,10 +6,11 @@ description: Creative journey and case study for the Solid Nutrition London webs
 category: portfolio
 coverImg: /portfolio/portfolio-assets/solid-nutrition-london/img/portfolio-cover.png
 tags: [webdesign, e-commerce]
-relatedimageurl:
+relatedimageurl: portfolio-assets/solid-nutrition-london/img/portfolio-cover.png
 googlewebfonts: Lato|Open+Sans:400,700,800
+_content: false
 ---
-extends /_templates/single-portfolio
+extends /_layouts/single-portfolio
 
 append config
 	-var PageTitle = 'Solid Nutrition London Website'
@@ -23,7 +24,7 @@ block creative-journey
 		if post.tagline
 			h3.sub-heading= post.tagline
 			// @TODO: (5) [convert to mixin]
-	include /_includes/portfolio/meta
+	include /_templates/portfolio/meta
 	//- TODO: block overview
 	.overview
 		h2.section-header Summary.
