@@ -1,26 +1,26 @@
 block config
-	include /_includes/config
+	include /_templates/config
 
 doctype
 html( xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" )
-	
-	include /_includes/head
+
+	include /_templates/head
 	block styles
 		!= css('/')
 
 	body
-		if pullDown 
+		if pullDown
 			//- invisible checkbox for toggling pulldown
 			input#pulldowntoggler(type="checkbox")
 		.page-wrap
 			.page-content
 				if pullDown
-					include /_includes/site-header
+					include /_templates/site-header
 
 				block content
 
 				if pullDown
-					include /_includes/coolform
+					include /_templates/coolform
 
 		block vendorJS
 			if jQuery
@@ -32,7 +32,7 @@ html( xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" )
 
 		block siteJS
 			!= js('/')
-	
+
 	footer
 		block footer
 			p this is the footer

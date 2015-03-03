@@ -1,4 +1,4 @@
-extends /_templates/default
+extends /_layouts/default
 append config
 	-var jQuery = true
 	-var PullDown = false
@@ -7,5 +7,5 @@ append content
 	!= yield
 
 block footer
-	include /_includes/portfolio/footer
+	include /_templates/portfolio/footer
 	a(href='/') &laquo; back to home

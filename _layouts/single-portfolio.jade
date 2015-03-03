@@ -1,4 +1,4 @@
-extends /_templates/default
+extends /_layouts/default
 append config
 	-var jQuery = true
 	-var PullDown = false
@@ -8,7 +8,7 @@ block styles
 
 block content
 	block creative-journey
-	include /_includes/portfolio/related
+	include /_templates/portfolio/related
 
 append siteJS
 	//- define social scripts in app.coffee (ef scripts: social)
@@ -17,5 +17,5 @@ append siteJS
 		include /assets/js/custom/social-media.js
 
 block footer
-	include /_includes/portfolio/footer
+	include /_templates/portfolio/footer
 	a(href='/') &laquo; back to home
