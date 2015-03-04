@@ -11,14 +11,16 @@ header.site-header
 			nav.site-header__links
 				#filters.button-group
 					button.button.is-checked(data-filter="*") show all
-					button.button(data-filter=".thoughts") thoughts
-					button.button(data-filter=".creations") creations
-					button.button(data-filter=".code") code
-					button.button(data-filter=".portfolio") portfolio
-				#sorts.button-group
-					button.button(data-sort-by="date" data-sort-ascending="false") date
-					button.button(data-sort-by="category") category
-					button.button(data-sort-by="original-order") reset
+					button.button(data-filter=".category--thoughts") thoughts
+					button.button(data-filter=".category--creations") creations
+					button.button(data-filter=".category--code") code
+					button.button(data-filter=".category--portfolio") portfolio
+					button.button(data-filter=".featured") featured
+				if site.posts.all().length > 10
+					#sorts.button-group
+						button.button(data-sort-by="date" data-sort-ascending="false") date
+						button.button(data-sort-by="category") category
+						button.button(data-sort-by="original-order") reset
 
 			.site-header__right
 				.social-icons

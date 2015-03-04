@@ -6,8 +6,8 @@ $(document).ready( function() {
 		layoutMode: 'masonry',
 		masonry: {
 			// TODO: set when page grid is set up
-			// columnWidth: '.page-content'
-			gutter: 20
+			columnWidth: '.grid-sizer',
+			gutter: 14
 		},
 		getSortData: {
 					date: '.isotope__element--date date.substring',

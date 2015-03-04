@@ -1,14 +1,7 @@
-/*** Transitions *** */
-// .isotope__element--cover
-// 	transition-duration: 0.075s
-// 	transition-property: all
-// 	transition-property: left, right, top
 .isotope
-	margin: 0 auto
 	font-size: 1rem
 	&__element
 		display: inline-block
-		margin-bottom: 20px
 		font-size: 0.58em
 		line-height: 0.5em
 		background: white
@@ -40,17 +33,30 @@
 			.isotope__element--cover
 				top: -1*40px
 				border-bottom: 3px solid $color-primary
-	// sizes
-	$hwratio = 0.350777935
+	// Gridding it all
+	// remember to add borders and shadows to total width
+	&__element
+		margin-bottom 6px
+	elementBorder = 6
+	.grid-sizer
+		width: (220 + elementBorder)px
 	.category--thoughts
-		width: 230px
-		height: 440px
+		width: (220 + elementBorder)px
+		height: (460 + elementBorder)px
 	.category--creations
-		width: 230px
-		height: 440px
+		width: (460 + elementBorder)px
+		height: (220 + elementBorder)px
 	.category--code
-		width: 230px
-		height: 440px
+		width: (220 + elementBorder)px
+		height: (220 + elementBorder)px
 	.category--portfolio
-		width: 230px
-		height: 440px
+		width: (220 + elementBorder)px
+		height: (460 + elementBorder)px
+	.featured
+		width: (460 + elementBorder)px
+		height: (460 + elementBorder)px
+		// TODO: add featured ribbon
+		// &:after
+			// content 'Featured'
+			// absolute(top)
+			// color lime
