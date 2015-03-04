@@ -1,0 +1,32 @@
+.meta
+	#fb-root
+	.meta__wrap
+		span.meta--lead Year
+		span.meta--follow=post.date.getFullYear()
+	.meta__wrap
+		span.meta--lead tags:
+		span.meta--follow
+			if post.tags
+				for tag in post.tags
+					span= tag
+	.meta__wrap.social
+		// fb like
+		.fb-like(data-href= locals.siteUrl + post._url, 
+			data-layout="button_count", 
+			data-action="like", 
+			data-show-faces="true", 
+			data-share="false")
+
+		// tweet
+		.tweet
+			a.twitter-share-button(
+				href="https://twitter.com/share", 
+				data-url= locals.siteUrl + post._url,
+				data-text= post.title + " by " + locals.author.name, 
+				data-via= locals.author.twitter, 
+				data-size="medium", 
+				data-hashtags= "#{post.tags + ', ' + post._categories}"
+						) 
+		// google +1
+		.gplus
+			.g-plusone

@@ -1,0 +1,31 @@
+extends /_layouts/default
+
+append config
+	- var jQuery = true
+	- var PageTitle = 'Home'
+	- var pullDown = true
+	- var filterTab = true
+	- var isotopeGrid = true
+
+block content
+	include _templates/isotope-grid
+
+	append vendorJS
+		if locals.config.node_env == "production"
+			script(src='//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.1/isotope.pkgd.min.js')
+		if locals.config.node_env == "development"
+			script(src='/assets/js/vendor/isotope.pkgd.min.js')
+
+	append siteJS
+		script(src='/assets/js/custom/isotope-filter.js')
+block footer
+	footer.home-footer
+		.footer__block
+			h2 Want to learn, connect or share with me?
+			span Just get in touch.
+		.footer__block
+			span.footer__block--title Email.
+			span.footer__block--contact= locals.author.email
+		.footer__block
+			span.footer__block--title= locals.author.city
+			span.footer__block--contact= locals.author.phone 

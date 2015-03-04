@@ -4,10 +4,13 @@
 # TEAM
 
     Thiago de Bastos -- <role> -- @thiagodebastos
+<<<<<<< HEAD:humans.txt
 
 # THANKS
 
     <name>
+=======
+>>>>>>> roots:humans.txt
 
 # TECHNOLOGY COLOPHON
 

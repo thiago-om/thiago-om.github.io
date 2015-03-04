@@ -1,0 +1,10 @@
+// ==========================================================================
+// $FONT-FACE
+// ==========================================================================
+if variable-exists(google-fonts-url)
+	@import url($google-fonts-url)
+if variable-exists(fonts)
+	for $font-face in $fonts
+		// using axis mixin
+		font-face($font-face,'/assets/fonts/','normal','normal')
+

@@ -1,0 +1,32 @@
+extends /_layouts/default
+append config
+	-var jQuery = true
+	-var PullDown = false
+
+block styles
+	link(rel="stylesheet" href= '/portfolio/portfolio-assets/' + PageSlug + '/css/' + PageSlug + '.css')
+
+block content
+	//-  TODO: move to template file
+	header.site-header
+	.site-header__wrap
+		div(class='site-header ' + PageTheme)
+			.site-header__logo
+				span made with passion by
+				h3
+					| thiago
+					span debastos
+			hr
+	block creative-journey
+	include /_templates/portfolio/related
+
+append siteJS
+	//- define social scripts in app.coffee (ef scripts: social)
+	//- check twitter script
+	script
+		include /assets/js/custom/social-media.js
+		include /assets/js/custom/related-work.js
+
+block footer
+	include /_templates/portfolio/footer
+	a(href='/') &laquo; back to home
