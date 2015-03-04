@@ -15,12 +15,9 @@ module.exports =
 
 	extensions: [
 		js_pipeline(files: ['assets/js/*.coffee', 'assets/js/*.js']),
-		css_pipeline(files: 'assets/css/*.styl')
+		css_pipeline(files: 'assets/css/*.styl'),
 		yaml(),
-		dynamic_content(write: {'posts.json': 'posts', 'portfolio.json': 'portfolio'}),
-		records({
-			 portfolio: {file: 'posts.json'},
-			})
+		dynamic_content(write: {'posts.json': 'posts', 'portfolio.json': 'portfolio'})
 	]
 
 	stylus:
@@ -38,6 +35,8 @@ module.exports =
 			author:
 				name: 'Thiago de Bastos'
 				email: 'thiago@thiagodebastos.com'
+				phone: '+44 (0)7 53456 2784'
+				city: 'London'
 				github: 'thiagodebastos'
 				twitter: 'thiagodebastos'
 				facebook: 'thiago.davoodifar'
