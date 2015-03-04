@@ -12,6 +12,7 @@ $border-color ?= $brand-primary
 $meta-bg-primary ?= $brand-primary
 $meta-bg-secondary ?= $brand-secondary
 
+// TODO: @atomic move to quarks
 html
 	width: 1100px
 	margin: 0 auto
@@ -37,6 +38,12 @@ h1, h2
 
 p, li, span
 	font-family: $body-font
+
+// Links
+a, a:hover, a:visited
+	color tomato
+	text-decoration none
+	text-transform uppercase
 
 //// meta information
 .meta
