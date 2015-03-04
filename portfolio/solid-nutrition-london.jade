@@ -1,0 +1,120 @@
+---
+date: 2014-01-15
+title: Solid Nutrition London Website.
+tagline: Learn. Train. Grow.
+description: Creative journey and case study for the Solid Nutrition London website.
+category: portfolio featured
+coverImg: /portfolio/portfolio-assets/solid-nutrition-london/img/portfolio-cover.png
+tags: [webdesign, e-commerce]
+relatedimageurl: portfolio-assets/solid-nutrition-london/img/portfolio-cover.png
+googlewebfonts: Lato|Open+Sans:400,700,800
+_content: false
+---
+extends /_layouts/single-portfolio
+
+append config
+	-var PageTitle = 'Solid Nutrition London Website'
+
+block creative-journey
+	.hero
+		img.alina(src="/portfolio/portfolio-assets/solid-nutrition-london/img/alina_large.png", alt="Alina Kuznecova holding weights")
+		img.protein(src="/portfolio/portfolio-assets/solid-nutrition-london/img/protein.png", alt="Solid Nutrition London Protein Products")
+	.header
+		h1.project-name= post.title
+		if post.tagline
+			h3.sub-heading= post.tagline
+			// @TODO: (5) [convert to mixin]
+	include /_templates/portfolio/meta
+	//- TODO: block overview
+	.overview
+		h2.section-header Summary.
+		.section-content
+			.summary
+				p
+					| Alina is a passionate personal trainer and nutritionist based in central London. She started Solid Nutrition London to provide a training and education service for local residents, assisting in the development of their physical and spiritual wellbeing, as well as to provide them with personally branded nutritional supplement products. What stood out to me about Alina was her passion for her clients and her firm belief in human connection. Keeping this in mind I designed Solid Nutrition London&#8217;s website to be a reflection of Alina herself and upon visiting the website, prospective clients can experience the closest thing to having already met Alina.
+			// .summary
+			.snl-logo
+				//- TODO: import portfolio assets
+				img(src="/portfolio/portfolio-assets/solid-nutrition-london/img/logo_lg_whitebg.png", alt="Solid Nutrition London logo")
+			.brief
+				h2 Brief.
+				ol
+					li
+						| educate people on training and supplements through articles and regular content uploads.
+					li sell nutritional products.
+					li simple, intuitive design with minimal purchase process.
+					li target average gym users.
+	// .overview
+	.solution
+		h2.section-header Solution.
+		.section-content
+			.insight
+				h3 Insight
+				p
+					| By conducting research, such as a Competitor Analysis, I was able to design a website that would highlight Solid Nutrition London as something much more than its competitors. One major finding was how impersonal other &#8216;personal&#8217; trainers&#8217; websites were.
+			.branding
+				h3 Personal Branding
+				p
+					| Reflecting on results from the Competitive Analysis, part of my recommendation was for Alina to brand herself as the face of Solid Nutrition London. Due to her business having been built from the ground up on word of mouth and Alina&#8217;s reputation for a person-centered business, my aim was to leverage visual design and personal branding to continue as close a personal experience as can be experienced via the web.
+			.alina-profile
+				//- TODO: import portfolio assets
+				img(src="/portfolio/portfolio-assets/solid-nutrition-london/img/alina-profile.png", alt="Profile picture of Alina")
+	// .solution
+	hr
+	.visual-design
+		h2.section-header Visual Design.
+		p
+			| The final result was a responsive website split into three, easy to find sections, with Alina herself at the center of the design.
+		//- TODO: import portfolio assets
+		img(src="/portfolio/portfolio-assets/solid-nutrition-london/img/responsive-showcase@1x.png", alt="Solid Nutrition London responsive showcase")
+		.user-experience
+			.ux-summary
+				h3 User Experience
+				p
+					| Solid Nutrition London&#8217;s branding would not work without current &#38; future clients experiencing something more than an online store - therefore part of the visual design also included an emphasis on a trainee&#8217;s 3 stage workout journey.
+			.ux-feature
+				table
+					tr
+						th
+							.circle
+								span Learn.
+						td
+							ul
+								li Clean interface for listing the article feed.
+								li Small thumbnail for each article for visual appeal and context.
+					tr
+						th
+							.circle Train.
+						td
+							ul
+								li Overview of available services.
+								li Example workouts specific to body type.
+					tr
+						th
+							.circle Grow.
+						td
+							ul
+								li Minimalistic storefront.
+								li Streamlined store to checkout flow.
+								li Discount coupon feature.
+								li Returning customer login.
+		// .user-experience
+	// .visual-design
+	append technology
+		.technology
+			h2.section-header Technology.
+			.tech-logos
+				.img-container
+					//- TODO: import portfolio assets
+					img(src="portfolio-assets/img/WP.png", alt="wordpress logo")
+				.img-container
+					img(src="portfolio-assets/img/woocommerce.png", alt="woocommerce logo")
+				.img-container
+					img(src="portfolio-assets/img/pagespeed.png", alt="google pagespeed logo")
+			.tech-copy
+				p
+					| WordPress as a Content Management System for ease of use, affordability and continued community development.
+				p
+					| WooCommerce as a shop management tool for intuitive and affordable control of a small shopfront.
+				p
+					| Delivering hi-res, retina-ready websites can take a toll on regular shared hosting. This is why I host my own websites and configure them to utilize Google&#8217;s mod_pagespeed for faster page loading.

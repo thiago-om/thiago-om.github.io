@@ -1,0 +1,62 @@
+.isotope
+	font-size: 1rem
+	&__element
+		display: inline-block
+		font-size: 0.58em
+		line-height: 0.5em
+		background: white
+		position: relative
+		overflow: hidden
+		text-decoration: none
+		color: black
+		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.7)
+		border: 3px solid white
+		h2, em
+			position: absolute
+			bottom: 10px
+			padding: 0 6px
+		h2
+			color: #555555
+			font-family: $helvetica
+		em
+			color: #777777
+			font-family: $georgia
+			font-style: normal
+		&--cover
+			min-width: 100%
+			height: 100%
+			position: absolute
+			top: 0px
+			left: 0px
+			transition: all, 0.075s, linear
+		&:hover
+			.isotope__element--cover
+				top: -1*40px
+				border-bottom: 3px solid $color-primary
+	// Gridding it all
+	// remember to add borders and shadows to total width
+	&__element
+		margin-bottom 6px
+	elementBorder = 6
+	.grid-sizer
+		width: (220 + elementBorder)px
+	.category--thoughts
+		width: (220 + elementBorder)px
+		height: (460 + elementBorder)px
+	.category--creations
+		width: (460 + elementBorder)px
+		height: (220 + elementBorder)px
+	.category--code
+		width: (220 + elementBorder)px
+		height: (220 + elementBorder)px
+	.category--portfolio
+		width: (220 + elementBorder)px
+		height: (460 + elementBorder)px
+	.featured
+		width: (460 + elementBorder)px
+		height: (460 + elementBorder)px
+		// TODO: add featured ribbon
+		// &:after
+			// content 'Featured'
+			// absolute(top)
+			// color lime

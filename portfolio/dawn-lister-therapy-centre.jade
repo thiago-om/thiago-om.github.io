@@ -1,0 +1,96 @@
+---
+date: 2014-01-15
+title: Dawn Lister Therapy Centre.
+description: Creative journey and case study for the Dawn Lister Therapy Centre website.
+category: portfolio featured
+tags: [webdesign]
+relatedimageurl: portfolio-assets/dawn-lister-therapy-centre/img/logo.png
+coverImg: /portfolio/portfolio-assets/dawn-lister-therapy-centre/img/logo.png
+googlewebfonts: Lato|Open+Sans:400,700,800
+_content: false
+---
+extends /_layouts/single-portfolio
+append config
+	-var PageTitle= 'Dawn Lister Website'
+
+block creative-journey
+	.hero
+		img.hero-image(src= "/portfolio/portfolio-assets/" + PageSlug + "/img/hero.png", alt="Hero image showcasing responsive design on MacBook Pro screen")
+	.header
+		h1.project-name= post.title
+		if post.tagline
+			h3.sub-heading= post.tagline
+		// @TODO: (5) [convert to mixin]
+	include /_templates/portfolio/meta
+	.overview
+		h2.section-header Summary.
+		.section-content
+			.summary
+				p
+					| Dawn Lister is a well-known and respected therapist with over 20 years experience, based in Leigh-on-Sea, just outside of London.
+				p
+					| The website links existing as well as potential future clients with information about the centre, including service description and staff bios. The website is also where Dawn will share her blog and podcasts, encouraging further engagement between herself and the public.
+				p
+					| I guided Dawn through the process article and podcast submission and remain in contact, providing support and advice.
+			// .summary
+			.column
+				.goals
+					h3 Goals
+					ol
+						li raise awareness.
+						li offer information.
+						li build an online presence.
+						li match current branding.
+				.insight
+					h3 Insight
+					p
+						| After some quick research we came to realise that many local therapists websites used generic templates. This just would not do and standing out from the crowd did not pose much of a challenge to creative juice.
+	// .overview
+	.creative
+		h2.section-header Creative.
+		small Website Visual Interface Design
+		.section-content
+			.logo
+				img(src="/portfolio/portfolio-assets/" + PageSlug + "/img/logo.png")
+			.copy
+				p
+					| The colour palette was extracted from already exising brouchures for branding consistency with an emphasis on balance between feminine and masculine colours.
+			.color-palettes
+				.color-palette.rustic-red
+				.color-palette.bittersweet
+				.color-palette.sundown
+		// .section-content
+		.radius-bg
+			.imac-showcase
+				img(src="/portfolio/portfolio-assets/" + PageSlug + "/img/imac-showcase.png", alt="Responsive website design demo on iMac screen")
+			.copy
+				p
+					| During design iteration, communication is key and through trial and error we came to an effective means of communicating ideas.
+			.image-grid
+				img(src="/portfolio/portfolio-assets/" + PageSlug + "/img/sketch-mockup-1.png", alt="Sketch of early website design mockup")
+				img(src="/portfolio/portfolio-assets/" + PageSlug + "/img/sketch-mockup-2.png", alt="Sketch of early website design mockup")
+				img(src="/portfolio/portfolio-assets/" + PageSlug + "/img/sketch-mockup-3.png", alt="Sketch of early website design mockup")
+			.copy
+				p
+					| Using SoundCloud&#8217;s service we were able to embed uploaded podcasts affordably and efficiently.
+			.iphone-showcase
+				img(src="/portfolio/portfolio-assets/" + PageSlug + "/img/iphone-showcase.png", alt="Responsive website design demo on iPhone screen")
+		// .radius-bg
+	// .creative
+	append technology
+		.technology
+			h2.section-header Technology.
+			.tech-logos
+				.img-container.wp-logo
+					img(src="/portfolio/portfolio-assets/img/WP.png", alt="wordpress logo")
+				.img-container
+					img(src="/portfolio/portfolio-assets/img/soundcloud.png", alt="soundcloud logo")
+				.img-container
+					img(src="/portfolio/portfolio-assets/img/pagespeed.png", alt="google pagespeed logo")
+			.tech-copy
+				p
+					| WordPress as a Content Management System for ease of use, affordability and continued community development.
+				p
+					| Hosting Dawn&#8217;s meditation podcasts via Soundcloud was both efficient and intuitive.
+				p
+					| Delivering hi-res, retina-ready websites can take a toll on regular shared hosting. This is why I host my own websites and configure them to utilize Google&#8217;s mod_pagespeed for faster page loading.

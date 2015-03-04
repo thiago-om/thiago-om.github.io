@@ -1,0 +1,17 @@
+feed(xmlns="http://www.w3.org/2005/Atom")
+	title= locals.siteTitle
+	link(href= locals.siteUrl + '/atom.xml', rel="self")
+	link(href= locals.siteUrl + '/')
+	updated!= new Date().toISOString()
+	id= locals.siteUrl
+	author
+		name= locals.author.name
+		email= locals.author.email
+	for post in site.posts.all()
+		entry
+			title= post.title
+			link(href= locals.siteUrl + post._url)
+			updated= post.date
+			id= locals.siteUrl + post.id
+			content(type="html")= post._content
+
