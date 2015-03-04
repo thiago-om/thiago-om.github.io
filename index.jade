@@ -18,3 +18,14 @@ block content
 
 	append siteJS
 		script(src='/assets/js/custom/isotope-filter.js')
+block footer
+	footer.home-footer
+		.footer__block
+			h2 Want to learn, connect or share with me?
+			span Just get in touch.
+		.footer__block
+			span.footer__block--title Email.
+			span.footer__block--contact= locals.author.email
+		.footer__block
+			span.footer__block--title= locals.author.city
+			span.footer__block--contact= locals.author.phone 

@@ -6,7 +6,6 @@ js_pipeline     = require 'js-pipeline'
 css_pipeline    = require 'css-pipeline'
 yaml            = require 'roots-yaml'
 dynamic_content = require 'dynamic-content'
-records         = require 'roots-records'
 
 module.exports =
 	ignores: ['readme.md', '_templates/**/*', '**/_*', '**/*.sublime*', '_layouts/**/*', '.gitignore', '.editorconfig', 'ship.*conf']
@@ -14,9 +13,9 @@ module.exports =
 	dump_dirs: ['']
 
 	extensions: [
+		yaml(),
 		js_pipeline(files: ['assets/js/*.coffee', 'assets/js/*.js']),
 		css_pipeline(files: 'assets/css/*.styl'),
-		yaml(),
 		dynamic_content(write: {'posts.json': 'posts', 'portfolio.json': 'portfolio'})
 	]
 

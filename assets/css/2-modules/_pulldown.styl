@@ -3,14 +3,14 @@
 
 .slide-down-content
 	// slide-out topbar off-canvas
-	background-color: whitesmoke
+	background-color: black
 	position: fixed
 	top: -460px
-	// left: 0px
-	// down: 0px
-	color: black
+	left: 0px
+	down: 0px
+	color: whitesmoke
 	z-index: 1
-	height: 370px
+	height: 320px
 	width: 100%
 	padding: 30px
 	text-align: center
@@ -21,7 +21,7 @@
 		font-weight: 300
 		font-size: 2rem
 		display: inline-block
-		color: black
+		color: whitesmoke
 		list-style-type: none
 		span
 			font-weight: 900
@@ -34,8 +34,8 @@
 	&:checked + .page-wrap
 		.slide-down-content
 			top: 0px
+			border-bottom: 8px solid $color-primary
 		.site-header
-			top: 490px
-			border-top: 2px solid $color-primary
+			top: 360px
 		.page-content
-			padding-top: 400px
+			padding-top: 360px

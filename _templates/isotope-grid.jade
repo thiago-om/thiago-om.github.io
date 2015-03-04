@@ -1,15 +1,16 @@
 .isotope
+	.grid-sizer
 	each post in site.posts.all()
 		if site.posts.all(category)
 			unless post.title === undefined
-				a(data-category= post.category href= post._url class='element-item transition isotope__element #{post.category} category--' + post.category)
+				a(data-category= post.category href= post._url class='element-item transition isotope__element category--' + post.category)
 					h2.isotope__element--title= post.title
 					//- p= post.category
 					em.isotope__element--date= post.date.toDateString()
 					.isotope__element--cover(style='background: url(#{post.coverImage}) no-repeat top left; background-size: cover; background-color: white')
 
 	each post in site.portfolio.all()
-		div(class='element-item transition isotope__element #{post.category} category--' + post.category)
+		div(class='element-item transition isotope__element category--' + post.category)
 			a(data-category= post.category href= post._url)
 				h2.isotope__element--title= post.title
 				//- p= post.category
