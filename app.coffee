@@ -38,7 +38,7 @@ module.exports =
 				city: 'London'
 				github: 'thiagodebastos'
 				twitter: 'thiagodebastos'
-				facebook: 'thiago.davoodifar'
+				facebook: 'thiagodebastos'
 				behance: 'xingur'
 			analytics: 'google'
 			config:
