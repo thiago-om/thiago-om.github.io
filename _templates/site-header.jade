@@ -3,8 +3,6 @@ header.site-header
 		div(class='site-header ' + PageTheme)
 			.site-header__logo
 				h3
-					//- TODO: move to left of screen
-					label.toggle(for="pulldowntoggler") ☰
 					| thiago
 					span debastos
 
@@ -16,6 +14,7 @@ header.site-header
 					button.button(data-filter=".category--code") code
 					button.button(data-filter=".category--portfolio") portfolio
 					button.button(data-filter=".featured") featured
+					label.toggle.button.close(for="pulldowntoggler") newsletter
 				if site.posts.all().length > 10
 					#sorts.button-group
 						button.button(data-sort-by="date" data-sort-ascending="false") date
@@ -25,13 +24,13 @@ header.site-header
 			.site-header__right
 				.social-icons
 					div
-						a.icon-behance(href="http://www.behance.net/" + locals.author.behance)
+						a.icon-behance(href="http://www.behance.net/" + locals.author.behance target="_blank")
 					div
 						//- TODO: change google url when receive custom page url
-						a.icon-google-plus(href="https://plus.google.com/u/0/111994372583076987913/")
+						a.icon-google-plus(href="https://plus.google.com/u/" + locals.author.google target="_blank")
 					div
-						a.icon-facebook(href="https://www.facebook.com/" + locals.author.facebook)
+						a.icon-facebook(href="https://www.facebook.com/" + locals.author.facebook target="_blank")
 					div
-						a.icon-twitter(href="https://www.twitter.com/" + locals.author.twitter)
+						a.icon-twitter(href="https://www.twitter.com/" + locals.author.twitter target="_blank")
 					div
-						a.icon-github(href="https://github.com/" + locals.author.github)
+						a.icon-github(href="https://github.com/" + locals.author.github target="_blank")

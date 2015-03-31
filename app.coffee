@@ -6,6 +6,7 @@ js_pipeline     = require 'js-pipeline'
 css_pipeline    = require 'css-pipeline'
 yaml            = require 'roots-yaml'
 dynamic_content = require 'dynamic-content'
+type            = require 'typographic'
 
 module.exports =
 	ignores: ['readme.md', '_templates/**/*', '**/_*', '**/*.sublime*', '_layouts/**/*', '.gitignore', '.editorconfig', 'ship.*conf']
@@ -20,7 +21,7 @@ module.exports =
 	]
 
 	stylus:
-		use: [axis(), rupture(), jeet(), autoprefixer()]
+		use: [axis(), rupture(), type(), jeet(), autoprefixer()]
 		sourcemap: true
 
 	jade:
@@ -39,7 +40,7 @@ module.exports =
 				github: 'thiagodebastos'
 				twitter: 'thiagodebastos'
 				facebook: 'thiagodebastos'
-				behance: 'xingur'
+				behance: 'thiagodebastos'
 			analytics: 'google'
 			config:
 				node_env: process.env.NODE_ENV = "development"

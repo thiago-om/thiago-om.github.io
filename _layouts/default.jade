@@ -4,9 +4,9 @@ block config
 doctype
 html( xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" )
 
-	include /_templates/head
-	block styles
-		!= css('/')
+	block head
+		include /_templates/head
+			!= css('/')
 
 	body
 		if pullDown
@@ -21,6 +21,7 @@ html( xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" )
 
 				if pullDown
 					include /_templates/coolform
+		block comments
 
 		block vendorJS
 			if jQuery
