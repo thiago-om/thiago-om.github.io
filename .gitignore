@@ -3,5 +3,5 @@ node_modules
 public
 *.sublime*
 .codekit-cache
-.config.codekit
+config.codekit
 ship.conf
