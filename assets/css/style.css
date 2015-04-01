@@ -918,6 +918,10 @@ figure.effect-bubba:hover p {
 	border-bottom: none;
 }
 
+.cbp-qtcontent img {
+	border-radius: 0 25%;
+}
+
 .cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
 .no-js .cbp-qtrotator .cbp-qtcontent {
 	position: relative;
