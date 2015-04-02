@@ -633,7 +633,7 @@ textarea.form-control {
 	position: absolute;
 	left: 50%;
 	bottom: 40px;
-	border: 2px solid #fff;
+	border: 2px solid #333;
 	border-radius: 50%;
 	height: 50px;
 	width: 50px;
@@ -643,9 +643,17 @@ textarea.form-control {
     text-align: center;
 }
 
+@media screen and (max-width: 400px) {
+	.scroll-down {
+		height: 30px;
+		width: 30px;
+	}
+
+}
+
 .scroll-down span{
     position: relative;
-    color: #fff;
+    color: #333;
     -webkit-animation-name: drop;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-timing-function: linear;
