@@ -10134,16 +10134,14 @@ textarea.form-control {
   text-align: center; }
 
 .calltoaction {
-  background: url(../images/item-3.jpg);
-  background-color: #222;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 50px 0;
-  color: #999; }
+  background-color: rgba(155, 33, 3, 0.4);
+  background-image: url("../images/pattern.png");
+  background-repeat: repeat;
+  padding: 50px; }
+
+.calltoaction--newsletter {
+  background-color: rgba(1, 61, 156, 0.2);
+  background-image: url("../images/pattern.png"); }
 
 .calltoaction h2 {
   font-size: 20px;
