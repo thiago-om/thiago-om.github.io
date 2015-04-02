@@ -3,9 +3,6 @@
 @import 'simple-line-icons';
 @import 'animate';
 
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
-@import url(http://fonts.googleapis.com/css?family=Lato:100,900);
-
 /*!
  * My Portfolio v1.0.0
  * Homepage: http://scripteden.com
@@ -74,7 +71,7 @@ a,
 /* ---------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 Raleway, sans-serif;
+	font: 800 40px/1.2 Raleway, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
@@ -139,7 +136,7 @@ h6 {
 	background: #D8E1E4;
 	border: 2px solid #D8E1E4;
 	padding: 6px 15px;
-	font-weight: 700;
+	font-weight: 800;
 }
 
 /* ---------------------------------------------- /*
