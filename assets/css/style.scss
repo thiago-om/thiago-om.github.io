@@ -10,6 +10,7 @@
  * Licensed under MIT
 */
 
+
 body {
 	font: 300 14px/1.8 'Raleway', sans-serif;
 	color: #666;
@@ -524,7 +525,7 @@ textarea.form-control {
 .header {
 	border-bottom: 1px solid #f5f5f5;
 	position: relative;
-	width: 100%;
+	width: 95%;
 	z-index: 998;
 }
 
@@ -554,7 +555,7 @@ textarea.form-control {
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav > li > a,
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
-	font-size: 11px;
+	font-size: 12px;
 	letter-spacing: 3px;
 	color: #222;
 }
