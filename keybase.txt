@@ -1,0 +1,82 @@
+==================================================================
+https://keybase.io/thiagodebastos
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://thiagodebastos.com
+  * I am thiagodebastos (https://keybase.io/thiagodebastos) on keybase.
+  * I have a public key with fingerprint 11F7 C8F2 B7C8 07EF 54EF  F6E5 1CE3 D4FB D8CB 4619
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.7"
+        },
+        "key": {
+            "fingerprint": "11f7c8f2b7c807ef54eff6e51ce3d4fbd8cb4619",
+            "host": "keybase.io",
+            "key_id": "1CE3D4FBD8CB4619",
+            "uid": "b8ea1f71454e301e0952d67a1b8e9419",
+            "username": "thiagodebastos"
+        },
+        "merkle_root": {
+            "ctime": 1429024665,
+            "hash": "a829756d371090344b8289c599e5d8b71e57e8eabfa4bb757d66edf68bf3444b6f26af153c64676dbaa6413c5e58d896fad69677b095488e281dbe8408f983a9",
+            "seqno": 198533
+        },
+        "service": {
+            "hostname": "thiagodebastos.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1429024714,
+    "expire_in": 157680000,
+    "prev": "fafa03a7014720ed5d306918665da12d2653131c65ec4d1dd38b78d6aa4cbef1",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - https://gpgtools.org
+
+owFtUn9MVVUcfw+QEsGINn/AS/GupQ583p/nnovNEp8YJTRYSkPree895z4uP959
+3vtAHghlzUjBwVhpoFDaQptgpLS0nD/CWGENZjASBXXaFCl0LRNnaucardy6f9zd
+u+/n+/l1Tl1MuCPK6brUd+enU2kznadGFMfKBQu7yynFQCEqpZxSC3XsD9pffrkI
+UylUAQ4psoXdupHoNxB251uJE5hkqgSblm74CYp2i26Rqki24faypvt92AyYus1F
+MYwmqlBjFfKmRawJPNY0gAVGxRziNQVBVeEBIxHKPMMKPqRKPeD06sjmWbqM8/Bp
+qR64NHUCX/xgoEAsEw2GJ8wczWBaElgERJkhA4n/G2hhcyJSME+XfSQLUQgalu26
+CJsFhdhrGsaD6GpQt4EMz0o0ywMgEF+ylUdWZchKogAQJzK0RHM8r0AWSqogSVhA
+UBEZLIiYmFE0mVcUURARABhpACoaAfMK0Fgga4zAqYAHIkCKLAOe4VQBCxBBCWgy
+AhIQRYUk4CHELGSQgiFPQ02CnGwHsfA6v0HMSVDguAr73yzRVWz7tsv734xu1Sgi
+qwHTCBqqUUjmecFgwEqhKr5MpoKhgL2xHiveCS6vovsROcH/HjFDpB7uhdSdTOHS
+gG5ir24jBBFAmjy2EC4hlJqsyTQnizTDiyyNkYA4GkgMJI0imWERCwSO4RgVCFjl
+EYMQRyqECMgyrypYY/5NC4hN2UcoLd3nl4PFJqYqNoe5IhzOKEfkpDD7DjuiJsf+
+c7FHnbGOz3d4NrBtSRuL/Sd3z/Le7580GIxId31/vvOq99Zbh5ie5xfuazyOh10f
+N7y0p2Nw+lfDR+XZB8wRn5OjQw09vWVV9SB9de+Wi69SwdzpS6aEC+Kbnjf+OD00
+cm7eseO+2kCg6ezS8trX9pdF3B6dmVN98WynXJEYriyetMS7Fp3Mu755yRWzec0U
++anH2Horo2qwO+68a846z8D+H04EtPgVlbsH3bd/rv5lbvXeFu/Q1YwO7/jXM6pC
+BwefDDu6eOoXo9de7r57aV//N3mbLh5+7pUVNTP5rISo+B37VmfduPPptTXlFz6y
+mrv9F25S40pbmHN7pTr0yMDl4ntTx55gDhTVLcvd0115M2Znes3kzt7+1Jym1cvp
+eSceHasree/Ib4XJDVudr88qqBqJa7q+q6uh/lBO83dJm26Vnet492BGmick/nh3
+TI+7//j1wMmA9kJtW3vCgsZP6sLRFV/G8SmZJWXfzg/fsGvuNtjjmsbNKXVw0THL
+ozbQWZEFH5aOnnk6umXt21M9bTcGufFtXZ/dGhPcG1vPZHcUump+PRGd3REK9XR6
+Wvpr2+Hh+atWFsZ3Lsrc+fufre/XJjyzSIy/nXnPuf2YeXlYiq2YcTjhdEN2bfQ7
+692l+fV9Z7atObsd1ocPPNvRvjj3SMneyIjUpJXWNF9Nf+uWrheNjMY+bd0Hq9yh
+/JBjfDb8Cw==
+=R+8c
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/thiagodebastos
+
+==================================================================
