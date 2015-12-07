@@ -1,0 +1,255 @@
+/* Resets */
+body {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+/* *************
+300x250px BANNER TEMPLATE
+**************** */
+/* Div layer for the entire banner. */
+#container_dc {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0px;
+  left: 0px;
+  margin: auto;
+  overflow: hidden;
+  background-color: #12b4e9;
+}
+#content_dc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+/* Invisible button for background clickthrough. */
+#background_exit_dc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 400;
+}
+.banner-wrapper {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+:focus {
+  outline: none;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+.content-wrapper {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  background-color: #12b4e9;
+}
+/* Footer Styles */
+footer {
+  position: absolute;
+  bottom: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 60px;
+  background-color: #2c3e50;
+}
+.xero-logo {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+}
+.xero-tagline {
+  position: absolute;
+  top: 15px;
+  left: 64px;
+  width: 58px;
+  height: 33px;
+}
+.button-cta {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  width: 100px;
+  height: 33px;
+  text-align: center;
+  background-color: #27c229;
+  border-radius: 3px;
+}
+.button-cta img {
+  position: relative;
+  top: 7px;
+}
+#container_dc:hover .button-cta {
+  background-color: #21a623;
+  cursor: pointer;
+}
+/* *************
+CUSTOM STYLES
+**************** */
+.box {
+  display: inline-block;
+  position: absolute;
+}
+.box.middle {
+  height: 50px;
+  width: 70px;
+  background-color: #fff;
+}
+.box.left,
+.box.right {
+  top: 62px;
+  height: 62px;
+  width: 102px;
+  background-color: rgba(255,255,255,0.35);
+  transition: all 0.8s ease-in-out;
+}
+.box.left > img,
+.box.right > img {
+  position: relative;
+  height: 32px;
+  top: 15px;
+}
+.box.left {
+  border-radius: 0 6px 6px 0;
+  left: 0;
+}
+.box.left > img {
+  left: 25px;
+}
+.box.left.frame03 {
+  top: 215px;
+  -webkit-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+.box.right {
+  border-radius: 6px 0 0 6px;
+  right: 0;
+}
+.box.right > img {
+  float: right;
+  right: 21px;
+}
+.box.right.frame03 {
+  top: 208px;
+  -webkit-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+.box.middle {
+  top: 68px;
+  left: 115px;
+  border-radius: 6px;
+  transition: all 0.25s ease 1s;
+}
+.box.middle.frame01 {
+  opacity: 0.7;
+}
+.box.middle.frame03 {
+  opacity: 0;
+}
+.pointer {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  top: 150px;
+  left: 150px;
+  transition: all 1s ease;
+}
+.pointer.frame01 {
+  top: 53px;
+  left: 86px;
+  transition: all 1s ease;
+}
+.pointer.frame02 {
+  top: 150px;
+  left: 150px;
+  transition: all 1s ease;
+}
+.reconciled-box {
+  position: absolute;
+  background-color: #fff;
+  top: 53px;
+  left: 94px;
+  height: 84px;
+  width: 112px;
+  border-radius: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+.reconciled-box.frame04 {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.75s ease;
+}
+.reconciled-box.frame05 {
+  top: 250px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.reconciled-box .reconciled {
+  display: block;
+  height: 15px;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reconciled-box .tick {
+  display: block;
+  height: 30px;
+  margin-top: 14px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tick_word {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  height: 25px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.tick_word.frame05 {
+  opacity: 1;
+}
+.easy_accounting {
+  position: absolute;
+  top: -230px;
+  width: 350px;
+  height: 190px;
+  background-color: #2c3e50;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 2.5s ease 1s;
+}
+.easy_accounting .xero-in-text {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  width: 220px;
+}
+.easy_accounting.frame06 {
+  top: 0px;
+  visibility: visible;
+  opacity: 1;
+}
+.hide {
+  opacity: 0;
+}
