@@ -1,0 +1,7 @@
+body {
+  background: linear-gradient(to left, #517fa4, #243949);
+}
+iframe {
+  float: left;
+  margin: 20px;
+}

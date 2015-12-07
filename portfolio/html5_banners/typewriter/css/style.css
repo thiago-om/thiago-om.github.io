@@ -1,0 +1,207 @@
+body {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+:focus {  outline: none; }
+::-moz-focus-inner {  border: 0; }
+
+/* Div layer for the entire banner. */
+#container_dc {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0px;
+  left: 0px;
+  margin: auto;
+  overflow: hidden;
+  background-color: #2c3e50;
+}
+
+#content_dc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+/* Invisible button for background clickthrough. */
+#background_exit_dc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 400;
+}
+
+.banner-wrapper {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+:focus {
+  outline: none;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+
+.content-wrapper {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  background-color: #2c3e50;
+}
+
+/*Custom styles*/
+.main {
+  height: 250px;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  background-color: #18B4E9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.input{
+  position: absolute;
+  top: 70px;
+  left: 38px;
+  border:3px solid white;
+  width: 300px;
+  height: 46px;
+  z-index: 1;
+}
+
+.formula{
+  position: absolute;
+  top: 83px;
+  left: 55px;
+  width: 200px;
+  height: 24px;
+}
+.mask{
+  position: absolute;
+  top: 80px;
+  left: 48px;
+  width: 325px;
+  height: 30px;
+  background-color: #18B4E9;
+  z-index: 10;
+  border-left: 2px solid white;
+}
+.formula-selected{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 34px;
+  width: 226px;
+  overflow: hidden;
+}
+.formula-selected img:first-of-type{
+  width: 217px;
+  height: 34px;
+}
+.formula-selected img:last-of-type{
+  position: absolute;
+  top: 1px;
+  left: 8px;
+  width: 217px;
+  height: 34px;
+  opacity: 0;
+}
+.mask2{
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  top: 78px;
+  left: 44px;
+  width: 0;
+  height: 34px;
+  background-color: #18B4E9;
+  z-index: 10;
+  border-right: 2px solid white;
+}
+.excel-out{
+  position: absolute;
+  top: 70px;
+  left: 55px;
+  width: 121px;
+  height: 22px;
+}
+
+.xero-in{
+  position: absolute;
+  top: 0px;
+  left: 360px;
+  width: 300px;
+  height: 250px;
+  background-image:url(../img/xero-in.svg);
+  background-color: #2c3e50;
+}
+.xero-in img {
+  position: relative;
+  top: 86px;
+  left: 100px;
+  width: 95px;
+  height: 30px;
+}
+/* Footer Styles */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 60px;
+  background-color: #2c3e50;
+}
+.xero-logo {
+  position: absolute;
+  background-image:url(../img/xero-logo.svg);
+  top: 10px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+}
+.xero-tagline {
+  position: absolute;
+  top: 15px;
+  left: 64px;
+  width: 58px;
+  height: 33px;
+}
+.button-cta {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  width: 100px;
+  height: 33px;
+  text-align: center;
+  background-color: #27c229;
+  border-radius: 3px;
+}
+.button-cta img {
+  position: absolute;
+  width: 74px;
+  height:14px;
+  top: 10px;
+  right:13px;
+}
+.banner-wrapper:hover .button-cta {
+  background-color: #21A623;
+  cursor: pointer;
+}
