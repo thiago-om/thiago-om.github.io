@@ -3,10 +3,9 @@
 
 # TEAM
 
-    Thiago de Bastos -- <role> -- @thiagodebastos
+    Thiago de Bastos -- Developer Designer -- @thiagodebastos
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3, JavaScript
     Jekyll, HTML5 Boilerplate
-
