@@ -1,0 +1,321 @@
+#logo4, #logo4end {
+  top: 201px;
+  opacity: 0
+}
+#bg-exit, #bg-exit:hover, #cta2 {
+  cursor: pointer
+}
+body {
+  margin: 0 auto
+}
+div {
+  position: absolute
+}
+.panel {
+  width: 400px;
+  height: 38px;
+  position: relative
+}
+#copy, #cta1, #logo1, #logo1end, #logo2, #logo2end, #logo3, #logo3end, #logo4, #logo5, #logo6, #logo7, #logo8, .panel .back, .panel .front {
+  position: absolute
+}
+#cta1 {
+  top: 194px;
+  left: 24px;
+  opacity: 0
+}
+#logo1 {
+  top: 0;
+  left: 0;
+  opacity: 0
+}
+#logo1end {
+  top: 190px;
+  left: 289px;
+  opacity: 0
+}
+#logo2, #logo3 {
+  top: 193px;
+  left: 549px;
+  opacity: 0
+}
+#logo2end {
+  top: 193px;
+  left: 533px;
+  opacity: 0
+}
+#logo3end {
+  top: 193px;
+  left: 338px;
+  opacity: 0
+}
+#logo4 {
+  left: 529px
+}
+#logo4end {
+  position: absolute;
+  left: 449px
+}
+#logo5 {
+  top: 203px;
+  left: 386px;
+  opacity: 0
+}
+#logo6 {
+  top: 193px;
+  left: 612px
+}
+#logo7 {
+  top: 202px;
+  left: 846px
+}
+#logo8 {
+  top: 192px;
+  left: 740px
+}
+#copy {
+  top: 215px;
+  left: 22px;
+  opacity: 0
+}
+.panel .front {
+  top: 0;
+  left: 3px;
+  z-index: 100000;
+  width: inherit;
+  height: inherit;
+  -webkit-transform: rotateX(0) rotateY(0);
+  transform: rotateX(0) rotateY(0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out
+}
+#backgroundIMG, #flash1 {
+  top: 20px
+}
+.panel.flip .front {
+  z-index: 100000;
+  -webkit-transform: rotateX(179deg);
+  transform: rotateX(179deg)
+}
+.panel .back {
+  z-index: 100000;
+  width: inherit;
+  height: inherit;
+  -webkit-transform: rotateX(-179deg);
+  transform: rotateX(-179deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out
+}
+#bottomBox, #light2, #topBox {
+  height: 250px;
+  position: absolute;
+  width: 300px
+}
+.panel.flip .back {
+  z-index: 100000;
+  -webkit-transform: rotateX(0) rotateY(0);
+  transform: rotateX(0) rotateY(0)
+}
+#bg-exit {
+  width: 300px;
+  height: 600px;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0)
+}
+#light2 {
+  left: 166px;
+  top: 395px;
+  background-blend-mode: multiply;
+  -ms-transform: rotate(44deg);
+  -webkit-transform: rotate(44deg);
+  transform: rotate(44deg);
+  opacity: .7
+}
+#flare {
+  left: 380px;
+  top: -30px
+}
+#mask {
+  position: absolute;
+  filter: url(#multiply)
+}
+#inglis {
+  margin-left: -141px;
+  top: 50px;
+  left: -30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+#theCTA {
+  opacity: 1;
+  top: 207px
+}
+#cta2 {
+  opacity: 0;
+  top: 0;
+  position: absolute
+}
+#carsFinal, #frame1Text, #frame1end, #text_1, #text_2, #tscs {
+  top: 0;
+  left: 0
+}
+#text_1 img, #text_2 img {
+  -webkit-filter: drop-shadow(5px 5px 5px #000);
+  filter: drop-shadow(5px 5px 5px #000)
+}
+#flash1 {
+  left: 120px;
+  opacity: 0
+}
+#flash2 {
+  top: 80px;
+  left: 180px;
+  opacity: 0;
+  transform: scale(2)
+}
+#container {
+  background-color: #000;
+  width: 298px;
+  height: 598px;
+  overflow: hidden;
+  opacity: 0;
+  border: 1px solid #222
+}
+#frame2, #place {
+  position: absolute;
+  top: 0;
+  left: 0
+}
+#frameFinalText {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  opacity: 0
+}
+#frame2Text, #frame4Text {
+  top: 30px;
+  left: 30px
+}
+#frame3Text {
+  top: 0;
+  left: -30px;
+  opacity: 0
+}
+#frame1, #frame1Text, #frame1end, #frame2, #frame2Text, #frame3, #frame3Text, #frame4, #frame4Text {
+  opacity: 0;
+  position: absolute
+}
+#logo {
+  top: 39px;
+  left: 24px
+}
+#S_SText {
+  top: -70px;
+  left: -270px
+}
+#topBox {
+  background-color: #000;
+  margin-top: -108px
+}
+#bottomBox {
+  background-color: #000;
+  margin-top: 141px
+}
+#floor {
+  position: absolute;
+  top: 148px
+}
+#wall {
+  position: absolute;
+  top: 0
+}
+#ctaBox {
+  display: block;
+  bottom: 0;
+  height: 40px;
+  width: 300px;
+  background-color: #283e4c
+}
+#cta {
+  top: 218px;
+  left: 8px
+}
+#over {
+  top: 219px;
+  width: 98px;
+  height: 23px;
+  left: 9px;
+  visibility: hidden
+}
+#text1, #text3 {
+  left: 0;
+  top: 0
+}
+#text1a {
+  left: 15px;
+  top: -16px;
+  opacity: 0
+}
+#text3a {
+  left: 46px;
+  top: -10px;
+  opacity: 0
+}
+#text5 {
+  left: 0;
+  top: 0;
+  width: 200px auto
+}
+#text5a {
+  left: 18px;
+  top: 6px;
+  opacity: 0
+}
+#car1a, #car2a {
+  left: -20px;
+  clip: rect(150px, 360px, 180px, 40px)
+}
+#car1b, #car2b {
+  left: 0;
+  clip: rect(120px, 270px, 150px, 40px)
+}
+#car1c, #car2c {
+  left: 30px;
+  clip: rect(80px, 270px, 120px, 40px)
+}
+#car1d, #car2d {
+  left: 30px
+}
+#car1Final {
+  left: -48px;
+  top: 15px;
+  transform: scale(.8, .8);
+  -ms-transform: scale(.8, .8);
+  -webkit-transform: scale(.8, .8)
+}
+#car2Final {
+  left: 64px;
+  top: 7px;
+  transform: scale(.55, .55);
+  -ms-transform: scale(.55, .55);
+  -webkit-transform: scale(.55, .55)
+}
+
+#logos {
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+.terms {
+  position: absolute;
+  bottom: -20px;
+}
