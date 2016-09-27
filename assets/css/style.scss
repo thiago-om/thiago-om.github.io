@@ -345,7 +345,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url(/assets/images/profile-cover.jpg);
+	background: url(/assets/images/profile-cover-new.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -363,7 +363,7 @@ textarea.form-control {
     background-image: url("../images/pattern.png");
     background-repeat: repeat;
     height: 100%;
-		opacity: 0.1;
+		opacity: 0.8;
     left: 0;
     position: absolute;
     top: 0;
@@ -383,12 +383,13 @@ textarea.form-control {
 		 -o-transform: translate(0%, -50%);
 			transform: translate(0%, -50%);
 	padding: 0 15px;
-	color:#333;
+	color: white;
 }
 
 .intro h1{
-    font-weight: 800;
-		color:#333;
+  font-weight: 800;
+	color: rgba(#fff, 0.4);
+	-webkit-text-stroke: 1px white;
 }
 
 .start {
@@ -631,7 +632,7 @@ textarea.form-control {
 	position: absolute;
 	left: 50%;
 	bottom: 40px;
-	border: 2px solid #333;
+	border: 2px solid white;
 	border-radius: 50%;
 	height: 50px;
 	width: 50px;
@@ -651,7 +652,7 @@ textarea.form-control {
 
 .scroll-down span{
     position: relative;
-    color: #333;
+    color: white;
     -webkit-animation-name: drop;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-timing-function: linear;
@@ -1001,7 +1002,7 @@ figure.effect-bubba:hover p {
 
 @media screen and (max-width: 960px) {
 	#home {
-		background: url(/assets/images/profile-cover-center.jpg);
+		background: url(/assets/images/profile-cover-new.jpg);
 		background-color: #222;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
@@ -1014,17 +1015,12 @@ figure.effect-bubba:hover p {
 	}
 	.intro {
 		width: 100%;
-		top: 50%;
-		color: #ecf0f1;
+		top: 60%;
 		text-align: center;
 	}
-	.intro h1 {
-		color: #ecf0f1;
-	}
 	.home-overlay {
-	    background-color: rgba(52, 152, 219,0.3);
-			opacity: 0.7;
-
+    background-color: rgba(52, 152, 219,0.3);
+		opacity: 1;
 	}
 
 }
