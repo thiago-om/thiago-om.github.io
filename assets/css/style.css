@@ -10003,7 +10003,7 @@ textarea.form-control {
 .header {
   border-bottom: 1px solid #f5f5f5;
   position: relative;
-  width: 95%;
+  width: 100%;
   z-index: 998; }
 
 .navbar-custom {
