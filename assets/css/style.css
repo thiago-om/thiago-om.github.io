@@ -8095,8 +8095,8 @@ textarea.form-control {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover;
-  padding: 0; }
+  padding: 0;
+  min-height: 100vh; }
 
 .home-overlay {
   background-color: rgba(30, 76, 117, 0.4);
