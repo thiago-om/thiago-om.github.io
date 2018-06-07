@@ -158,10 +158,10 @@
 
   });
 
-  $('#mailchimpSub').live('click', function(e) {
-    e.preventDefault();
-    var modalLocation = $(this).attr('data-reveal-id');
-    $('#' + modalLocation).reveal($(this).data());
-  });
+  // $('#mailchimpSub').live('click', function(e) {
+  //   e.preventDefault();
+  //   var modalLocation = $(this).attr('data-reveal-id');
+  //   $('#' + modalLocation).reveal($(this).data());
+  // });
 
 })(jQuery);
